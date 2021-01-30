@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TextHandler : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class TextHandler : MonoBehaviour
 
     [SerializeField]
     private TMP_InputField InputText;
+
+    [SerializeField]
+    private Scrollbar Scrollbar;
+
+    public float offset = -1;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +33,11 @@ public class TextHandler : MonoBehaviour
         {
             HistoryText.text += "C:\\Users\\Bonzo>" + InputText.text + "\n";
             InputText.text = "";
+            Scrollbar.value = offset;
+
+           // InputField.
         }
+
+
     }
 }
