@@ -8,13 +8,16 @@ public class Room : MonoBehaviour
     public Room DownRoom;
     public Room RightRoom;
     public Room LeftRoom;
-
-    public List<string> ObjectList;
+    public bool isLocked;
+    public string KeyName;
+    public string RequiredKeyName;
+    public string LockedDialogue;
 
     public string OpeningText;
 
-    public string Object;
+    public string Download;
     public NPC RoomNPC;
+    private bool HasBeenDowloaded;
 
     public bool HasRoomInDirection(string direction)
     {
@@ -60,13 +63,18 @@ public class Room : MonoBehaviour
         return false;
     }
 
-    public bool HasObject()
+    public bool HasDownload()
     {
-        return Object == "";
+        return Download != "";
     }
 
     public bool HasNPC()
     {
         return RoomNPC != null;
+    }
+
+    public bool IsLocked()
+    {
+        return isLocked;
     }
 }

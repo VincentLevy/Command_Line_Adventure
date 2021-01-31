@@ -100,9 +100,9 @@ public class TextHandler : MonoBehaviour
         {
             switch (CurrentCommand)
             {
-                case "help":
+                //case "help":
 
-                    break;
+                //    break;
 
                 case "go":
                     //GoToRoom(CurrentArgument);
@@ -114,11 +114,11 @@ public class TextHandler : MonoBehaviour
                     break;
 
                 case "download":
-
+                    Download();
                     break;
 
                 case "execute":
-
+                    HandleExecute();
                     break;
 
                 case "objects":
@@ -132,18 +132,43 @@ public class TextHandler : MonoBehaviour
         }
     }
 
+    private void HandleExecute()
+    {
+        
+    }
+
+    private void Download()
+    {
+        if (CurrentRoom.HasDownload())
+        {
+            Inventory.Add(CurrentRoom.Download);
+            PrintMessage("you have downloaded " + CurrentRoom.Download);
+        }
+        else
+        {
+            PrintMessage("you can't download anything here");
+        }
+    }
+
     private void HandleTalk(string option)
     {
         int parsedOption;
         if(int.TryParse(option, out parsedOption))
         {
-            if(parsedOption < 0 || parsedOption >= CurrentRoom.RoomNPC.DialogueOptions.Count)
+            NPC CurrentNPC = CurrentRoom.RoomNPC;
+
+            if(parsedOption < 0 || parsedOption >= CurrentNPC.DialogueOptions.Count)
             {
                 PrintMessage("there is no such option");
             }
             else
             {
-                PrintMessage(CurrentRoom.RoomNPC.DialogueResponses[parsedOption]);
+                PrintMessage(CurrentNPC.NPCname + ": " + CurrentNPC.DialogueResponses[parsedOption]);
+                if (CurrentNPC.HasKey() && parsedOption == CurrentNPC.KeyLocation)
+                {
+                    Inventory.Add(CurrentNPC.key);
+                    PrintMessage(CurrentNPC.NPCname + " " + "got key");
+                }
             }
         }
         else
@@ -178,19 +203,55 @@ public class TextHandler : MonoBehaviour
             switch (direction)
             {
                 case "up":
-                    CurrentRoom = CurrentRoom.UpRoom;
+                    if (!CurrentRoom.UpRoom.IsLocked())
+                    {
+                        CurrentRoom = CurrentRoom.UpRoom;
+                    }
+                    else
+                    {
+                        PrintMessage(CurrentRoom.UpRoom.LockedDialogue);
+                    }
                     break;
 
                 case "down":
-                    CurrentRoom = CurrentRoom.DownRoom;
+                    if (!CurrentRoom.DownRoom.IsLocked())
+                    {
+                        CurrentRoom = CurrentRoom.DownRoom;
+                    }
+                    else
+                    {
+                        PrintMessage(CurrentRoom.DownRoom.LockedDialogue);
+                    }
                     break;
 
                 case "left":
-                    CurrentRoom = CurrentRoom.LeftRoom;
+                    //    //if it's not locked
+                    //    if (!CurrentRoom.LeftRoom.IsLocked())
+                    //    {
+                    //        CurrentRoom = CurrentRoom.LeftRoom;
+                    //    }
+                    //    //if the player has the key and the door is locked
+                    //    else if(CurrentRoom.LeftRoom.IsLocked() && Inventory.Contains(CurrentRoom.LeftRoom.RequiredKeyName))
+                    //    {
+                    //        CurrentRoom = CurrentRoom.LeftRoom;
+                    //    }
+                    //    //if it's locked and the player doesn't have the key
+                    //    else
+                    //    {
+                    //        PrintMessage(CurrentRoom.LeftRoom.LockedDialogue);
+                    //    }
+                    HandleRoomTransition(CurrentRoom.LeftRoom);
                     break;
 
                 case "right":
-                    CurrentRoom = CurrentRoom.RightRoom;
+                    if (!CurrentRoom.RightRoom.IsLocked())
+                    {
+                        CurrentRoom = CurrentRoom.RightRoom;
+                    }
+                    else
+                    {
+                        PrintMessage(CurrentRoom.RightRoom.LockedDialogue);
+                    }
                     break;
             }
 
@@ -199,6 +260,25 @@ public class TextHandler : MonoBehaviour
         else
         {
             PrintMessage("there is no such room");
+        }
+    }
+
+
+    private void HandleRoomTransition(Room room)
+    {
+        if (!room.IsLocked())
+        {
+            CurrentRoom = room;
+        }
+        //if the player has the key and the door is locked
+        else if (room.IsLocked() && Inventory.Contains(room.RequiredKeyName))
+        {
+            CurrentRoom = room;
+        }
+        //if it's locked and the player doesn't have the key
+        else
+        {
+            PrintMessage(room.LockedDialogue);
         }
     }
 
