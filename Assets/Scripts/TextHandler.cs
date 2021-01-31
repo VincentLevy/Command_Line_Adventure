@@ -295,7 +295,7 @@ public class TextHandler : MonoBehaviour
 
                 if(CurrentNPC.HasItem() && parsedOption == CurrentNPC.ItemLocation)
                 {
-                    KeyList.Add(CurrentNPC.ItemName.ToLower());
+                    Items.Add(CurrentNPC.ItemName.ToLower());
                     PrintMessage(CurrentNPC.NPCname + " " + "got item");
                 }
             }
