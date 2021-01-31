@@ -123,59 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &86118089
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 86118091}
-  - component: {fileID: 86118090}
-  m_Layer: 0
-  m_Name: RoomTwo
-  m_TagString: Untagged
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &86118090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86118089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpRoom: {fileID: 0}
-  DownRoom: {fileID: 0}
-  RightRoom: {fileID: 0}
-  LeftRoom: {fileID: 634685619}
-  isLocked: 0
-  RequiredKeyName: 
-  LockedDialogue: 
-  OpeningText: WITNESS ME
-  Download: ram
-  RoomNPC: {fileID: 175804110}
---- !u!4 &86118091
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86118089}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.41, y: 0.7483114, z: -20.469807}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &136882740
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178934317
 GameObject:
@@ -627,6 +574,7 @@ MonoBehaviour:
   EventSystem: {fileID: 1587030861}
   StartingRoom: {fileID: 634685619}
   offset: -0.2
+  HelpMessage: 
 --- !u!1 &397010729
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +761,7 @@ GameObject:
   - component: {fileID: 488591017}
   - component: {fileID: 488591016}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ROOM FOLDER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -872,9 +820,42 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.8114544, y: 0.65028185, z: -21.735579}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 634685620}
+  - {fileID: 1377584283}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &600413406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600413407}
+  m_Layer: 0
+  m_Name: NPC Folder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &600413407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600413406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.039009, y: 1.8638546, z: -21.055668}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1453229896}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614673804
 GameObject:
@@ -1012,7 +993,7 @@ GameObject:
   - component: {fileID: 634685620}
   - component: {fileID: 634685619}
   m_Layer: 0
-  m_Name: RoomOne
+  m_Name: StartRoom
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1030,14 +1011,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpRoom: {fileID: 0}
+  UpRoom: {fileID: 1377584284}
   DownRoom: {fileID: 0}
-  RightRoom: {fileID: 86118090}
-  LeftRoom: {fileID: 1532922212}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
-  OpeningText: got to room 1
+  OpeningText: "\u201CWoah. Looks like I\u2019m finally in the system,\u201D you
+    proclaim. \u201CTime to get in, get these game files, and get out. Paulie doesn\u2019t
+    like Data Kingdom, I don\u2019t like Data Kingdom, and I gotta get back before
+    my wife gets home.\u201D You survey your surroundings. Looks like even in cyberspace
+    Data Kingdom does, in fact, look like an actual medieval kingdom. A large gate
+    lies in front of you, beset by fifty foot high, god-knows-how-wide stone walls
+    on either side. A man clad in armor stands guard. On the other side of that gate,
+    you figure, lies all the game data your team lost after Gerald mucked up the
+    whole repository with that disastrous merge conflict."
   Download: 
   RoomNPC: {fileID: 1682265295}
 --- !u!4 &634685620
@@ -1047,12 +1036,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634685618}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7483114, z: -20.469807}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 488591018}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782915547
 GameObject:
@@ -1137,6 +1126,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1377584282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377584283}
+  - component: {fileID: 1377584284}
+  m_Layer: 0
+  m_Name: GatekeeperRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1377584283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377584282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488591018}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1377584284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377584282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 634685619}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 1
+  RequiredKeyName: User Credentials
+  LockedDialogue: You'll need some proper User Credentials in order to pass through
+    here.
+  OpeningText: 'Moving towards the gate, you realize just how massive Data Kingdom
+    appears to be. You may be in for one heck of a doozy tonight. The armored guard
+    regards you, silently. '
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &1452065919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,7 +1290,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452065919}
   m_CullTransparentMesh: 0
---- !u!1 &1532922211
+--- !u!1 &1453229895
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1253,51 +1298,64 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1532922213}
-  - component: {fileID: 1532922212}
+  - component: {fileID: 1453229896}
+  - component: {fileID: 1453229897}
   m_Layer: 0
-  m_Name: RoomThree
+  m_Name: GatekeeperNPC
   m_TagString: Untagged
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1532922212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532922211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpRoom: {fileID: 0}
-  DownRoom: {fileID: 0}
-  RightRoom: {fileID: 634685619}
-  LeftRoom: {fileID: 0}
-  isLocked: 1
-  RequiredKeyName: aKey
-  LockedDialogue: You need a key to enter here
-  OpeningText: got to room 3
-  Download: ram
-  RoomNPC: {fileID: 175804110}
---- !u!4 &1532922213
+--- !u!4 &1453229896
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532922211}
+  m_GameObject: {fileID: 1453229895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.61, y: 0.7483114, z: -20.469807}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 600413407}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453229897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453229895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: Gatekeeper of Data Kingdom
+  DialogueOptions:
+  - "What\u2019s good, G? "
+  - "You uhhh lettin\u2019 anyone past that gate of yours? "
+  - 'What exact command would I need to use to go through this gate, assuming I had
+    the correct item? '
+  DialogueResponses:
+  - "\u201CHAIL, CITIZEN! THE GREAT DATA KINGDOM STANDS BEFORE YOU! I AM JULIUS,
+    ITS HUMBLE GUARDSMAN. BEYOND THIS GATE LIES DATA KINGDOM PLAZA.\u201D "
+  - "\u201CONLY IF I AM BROUGHT YOUR USER CREDENTIALS! PERHAPS TAKE A LOOK AROUND,
+    YOU MAY FIND THEM LOCKED UP IN SOME PASSWORD MANAGER SOFTWARE OR ANOTHER.\u201D "
+  - " \u201CEXCELLENT QUESTION, CITIZEN! YOU WOULD SIMPLY TYPE execute User Credentials
+    on Data Kingdom Plaza INTO YOUR COMMAND LINE! WHETHER THE LETTERS ARE UPPER CASE
+    OR LOWER CASE IN ANY OF YOUR COMMANDS DOES NOT MATTER, BY THE WAY! Execute [item
+    name] on [room / item name] IS A WONDERFUL COMMAND! REMEMBER THIS, AS IT IS SURE
+    TO COME IN HANDY THROUGHOUT DATA KINGDOM! AND REMEMBER, YOU MAY TYPE help AT
+    ANY TIME IN ORDER TO PERUSE YOUR AVAILABLE LIST OF COMMANDS!\u201D "
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &1587030859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,7 +1571,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1689124405
 GameObject:
