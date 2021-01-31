@@ -44,6 +44,7 @@ public class TextHandler : MonoBehaviour
         CommandList.Add("execute");
         CommandList.Add("keys");
         CommandList.Add("items");
+        CommandList.Add("credits");
         //CommandList.Add("objects");
 
         //initializes the lists
@@ -152,12 +153,25 @@ public class TextHandler : MonoBehaviour
                 case "keys":
                     ShowKeys();
                     break;
+
+                case "credits":
+                    ShowCredits();
+                    break;
             }
         }
         else
         {
             PrintMessage("there is no such command");
         }
+    }
+
+    private void ShowCredits()
+    {
+        PrintMessage(
+            "A Game By: \n" +
+            "Davis Canby \n" +
+            "Oliver Galina \n" +
+            "Vincent Levy \n");
     }
 
     private void ShowKeys()
