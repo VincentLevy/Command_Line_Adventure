@@ -123,6 +123,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &76434704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76434705}
+  - component: {fileID: 76434706}
+  m_Layer: 0
+  m_Name: ChestItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &76434705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76434704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 600413407}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &76434706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76434704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: chest
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: id_key
+  OnExecuteDialogue: You insert the key into the chest. It opens up, and you receive
+    your User Credentials. Wonderful.
+  ItemName: 
+  KeyName: usercredentials
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &136882740
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,8 +626,13 @@ MonoBehaviour:
   Scrollbar: {fileID: 614673806}
   EventSystem: {fileID: 1587030861}
   StartingRoom: {fileID: 634685619}
-  offset: -0.2
-  HelpMessage: 
+  offset: -0.5
+  HelpMessage: "Command List:\ngo [direction] \ngo to the next room in that direction\ndirection
+    = up, down, left, right\n\ntalk \ntalk to the npc in the current room, pick a
+    number after that to say something\n\nleave\nleave a conversation\n\ndownload\ndownload
+    something in the current room \n\nexecute [executable] [target]\nuse something,
+    such as a key or item, on something else\ncan be used to open locked doors, like
+    this:\n\"execute [key] [room direction]\" room direction = up, down, left, right"
 --- !u!1 &397010729
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +881,9 @@ Transform:
   m_Children:
   - {fileID: 634685620}
   - {fileID: 1377584283}
+  - {fileID: 2004249782}
+  - {fileID: 2121629747}
+  - {fileID: 797162694}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -836,7 +897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600413407}
   m_Layer: 0
-  m_Name: NPC Folder
+  m_Name: NPC / Item Folder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -854,6 +915,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1453229896}
+  - {fileID: 76434705}
+  - {fileID: 1296955213}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1126,6 +1189,134 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &797162693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797162694}
+  - component: {fileID: 797162695}
+  m_Layer: 0
+  m_Name: DKPlaza
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797162694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797162693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488591018}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &797162695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797162693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1377584284}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 1
+  RequiredKeyName: usercredentials
+  LockedDialogue: 
+  OpeningText: "\u201CWell, here we are, Data Kingdom Plaza. Let\u2019s see, I believe
+    I need 3 assets in total. I need the {Main Character}, the {Levels}, and the
+    {Gameplay Mechanics}.\u201D Knowing that your lost game assets are somewhere
+    out there, lying in the flaming trash heap of this absolute garbage dump of a
+    source control platform, fills you with determination. You look around. You appear
+    to be in a bonafide medieval town, with stone buildings and cows and gallows
+    and everything. You do know that if you squint hard enough you can see the matrix
+    in all these things, but hey, ignorance is bliss. An interesting shiny object
+    lies far to your right, a suspicious looking man Soviet squats on a street corner
+    to your left, and a friendly looking man stands directly north of you, seemingly
+    appreciating the craftsmanship of the town gallows.\r"
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!1 &1296955212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1296955213}
+  - component: {fileID: 1296955214}
+  m_Layer: 0
+  m_Name: DataGoblinNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1296955213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296955212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 600413407}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1296955214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296955212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: 
+  DialogueOptions:
+  - "\u2018Sup? "
+  - "How\u2019s that steak, chief? "
+  - 'You know any ways to open this gate? '
+  DialogueResponses:
+  - 'MMMngmgmgmmm HELLO human, welcome to DATA KINGDOM!! MMngngmgmmmmmmmmmmm I am
+    the Tutorial Goblin. You must choose my Dialogue Option 2 in order to receive
+    the ID Key, which you can use to open that Chest over yonder! MMMNGNGNGMMMnnmmm.
+    (The Data Goblin gestures to a clearing near the gate, in the middle of which
+    sits an absurdly large treasure chest). '
+  - 'GOOD. MMMNGNGNGMMMMMMnnmmmmm. '
+  - 'MMMMMMGGGGNNGNGMMM YES YES! TAKE this ID Key! (The Data Goblin slams a huge
+    golden key into your hands.) Use on that chest over yonder! (The Data Goblin
+    gestures to a clearing near the gate, in the middle of which sits an absurdly
+    large treasure chest). GO NOW! MMMNGNGNGNNNMMMMMMmmmm. '
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: id_key
+  KeyLocation: 2
+  ItemLocation: 0
 --- !u!1 &1377584282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,19 +1360,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpRoom: {fileID: 0}
+  UpRoom: {fileID: 797162695}
   DownRoom: {fileID: 634685619}
-  RightRoom: {fileID: 0}
-  LeftRoom: {fileID: 0}
-  isLocked: 1
+  RightRoom: {fileID: 2121629748}
+  LeftRoom: {fileID: 2004249783}
+  isLocked: 0
   RequiredKeyName: User Credentials
-  LockedDialogue: You'll need some proper User Credentials in order to pass through
-    here.
+  LockedDialogue: 
   OpeningText: 'Moving towards the gate, you realize just how massive Data Kingdom
     appears to be. You may be in for one heck of a doozy tonight. The armored guard
     regards you, silently. '
   Download: 
-  RoomNPC: {fileID: 0}
+  RoomNPC: {fileID: 1453229897}
 --- !u!1 &1452065919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,6 +1889,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706571481}
   m_CullTransparentMesh: 0
+--- !u!1 &2004249781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2004249782}
+  - component: {fileID: 2004249783}
+  m_Layer: 0
+  m_Name: ChestRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2004249782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004249781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.78, y: 1.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488591018}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2004249783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004249781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 1377584284}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "In a clearing to your left you perceive a large treasure Chest. Moving
+    closer to it, you can see the words \u201CPassManagerTM Official Treasure Chest\u201D
+    printed on it in a fine ink. It looks like you\u2019ll need some ID to pop this
+    bad boy open. "
+  Download: 
+  RoomNPC: {fileID: 76434706}
 --- !u!1 &2102867676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +2020,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102867676}
   m_CullTransparentMesh: 0
+--- !u!1 &2121629746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121629747}
+  - component: {fileID: 2121629748}
+  m_Layer: 0
+  m_Name: GoblinRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2121629747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121629746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.83, y: 1.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488591018}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2121629748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121629746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1377584284}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "In a small copse to your right you come upon, my goodness, a real
+    live Data Goblin! The grumbly thing sits on a stone munching on a delicious looking
+    plate of holographic meatloaf. The creature doesn\u2019t look unfriendly; perhaps
+    the fellow can help you out. "
+  Download: 
+  RoomNPC: {fileID: 1296955214}
 --- !u!1 &2140778697
 GameObject:
   m_ObjectHideFlags: 0
