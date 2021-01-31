@@ -157,14 +157,11 @@ MonoBehaviour:
   RightRoom: {fileID: 0}
   LeftRoom: {fileID: 1415656717}
   isLocked: 0
-  KeyName: 
   RequiredKeyName: 
   LockedDialogue: 
   OpeningText: WITNESS ME
   Download: ram
   RoomNPC: {fileID: 2107261014}
-  CanExecute: 0
-  ExecuteName: 
 --- !u!4 &217868249
 Transform:
   m_ObjectHideFlags: 0
@@ -178,6 +175,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &230404901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230404904}
+  - component: {fileID: 230404903}
+  - component: {fileID: 230404902}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &230404902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230404901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: 
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!114 &230404903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230404901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: 
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!4 &230404904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230404901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8114544, y: 0.65028185, z: -21.735579}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288600772
 GameObject:
@@ -1372,14 +1444,11 @@ MonoBehaviour:
   RightRoom: {fileID: 217868248}
   LeftRoom: {fileID: 2141696620}
   isLocked: 0
-  KeyName: 
   RequiredKeyName: 
   LockedDialogue: 
   OpeningText: got to room 1
   Download: 
   RoomNPC: {fileID: 1854471225}
-  CanExecute: 0
-  ExecuteName: 
 --- !u!4 &1415656718
 Transform:
   m_ObjectHideFlags: 0
@@ -1529,8 +1598,8 @@ MonoBehaviour:
   OnExecuteDialogue: you now have akey
   ItemName: 
   KeyName: aKey
-  key: 
   KeyLocation: 0
+  ItemLocation: 0
 --- !u!4 &1854471226
 Transform:
   m_ObjectHideFlags: 0
@@ -1712,8 +1781,8 @@ MonoBehaviour:
   OnExecuteDialogue: 
   ItemName: 
   KeyName: 
-  key: aKey
   KeyLocation: 0
+  ItemLocation: 0
 --- !u!4 &2107261015
 Transform:
   m_ObjectHideFlags: 0
@@ -1762,14 +1831,11 @@ MonoBehaviour:
   RightRoom: {fileID: 1415656717}
   LeftRoom: {fileID: 0}
   isLocked: 1
-  KeyName: 
   RequiredKeyName: aKey
   LockedDialogue: You need a key to enter here
   OpeningText: got to room 3
   Download: ram
   RoomNPC: {fileID: 2107261014}
-  CanExecute: 0
-  ExecuteName: 
 --- !u!4 &2141696621
 Transform:
   m_ObjectHideFlags: 0
