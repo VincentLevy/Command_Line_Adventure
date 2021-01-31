@@ -4074,7 +4074,7 @@ MonoBehaviour:
   InputText: {fileID: 1821267901}
   Scrollbar: {fileID: 1365551307}
   EventSystem: {fileID: 1567297281}
-  StartingRoom: {fileID: 2120231054}
+  StartingRoom: {fileID: 77161799}
   offset: -0.2
   HelpMessage: "Command List:\ngo [direction] \ngo to the next room in that direction\ndirection
     = up, down, left, right\n\ntalk \ntalk to the npc in the current room, pick a
