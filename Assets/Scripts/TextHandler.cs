@@ -49,6 +49,8 @@ public class TextHandler : MonoBehaviour
         Items = new List<string>();
         CurrentRoom = StartingRoom;
 
+        Items.Add("item");
+
     }
 
     // Update is called once per frame
@@ -62,7 +64,7 @@ public class TextHandler : MonoBehaviour
             Scrollbar.value = offset;
 
             if(LastCommand != "")
-                ProcessLastCommand(LastCommand);
+                ProcessLastCommand(LastCommand.ToLower());
         }
 
         //constantly selects the input field
@@ -196,11 +198,11 @@ public class TextHandler : MonoBehaviour
 
             if (CurrentNPC.HasItem())
             {
-                Items.Add(CurrentNPC.ItemName);
+                Items.Add(CurrentNPC.ItemName.ToLower());
             }
             else if (CurrentNPC.HasKey())
             {
-                KeyList.Add(CurrentNPC.KeyName);
+                KeyList.Add(CurrentNPC.KeyName.ToLower());
             }
         }
         else
@@ -244,10 +246,14 @@ public class TextHandler : MonoBehaviour
             return;
         }
 
-        if (room.IsLocked() && key == room.RequiredKeyName)
+        if (room.IsLocked() && key.ToLower() == room.RequiredKeyName.ToLower())
         {
             room.isLocked = false;
             PrintMessage("used " + key);
+        }
+        else
+        {
+            PrintMessage("that key doesn't work here");
         }
     }
 
@@ -255,8 +261,8 @@ public class TextHandler : MonoBehaviour
     {
         if (CurrentRoom.HasDownload())
         {
-            KeyList.Add(CurrentRoom.Download);
-            PrintMessage("you have downloaded " + CurrentRoom.Download);
+            KeyList.Add(CurrentRoom.Download.ToLower());
+            PrintMessage("you have downloaded " + CurrentRoom.Download.ToLower());
         }
         else
         {
@@ -280,13 +286,13 @@ public class TextHandler : MonoBehaviour
                 PrintMessage(CurrentNPC.NPCname + ": " + CurrentNPC.DialogueResponses[parsedOption]);
                 if (CurrentNPC.HasKey() && parsedOption == CurrentNPC.KeyLocation)
                 {
-                    KeyList.Add(CurrentNPC.KeyName);
+                    KeyList.Add(CurrentNPC.KeyName.ToLower());
                     PrintMessage(CurrentNPC.NPCname + " " + "got key");
                 }
 
                 if(CurrentNPC.HasItem() && parsedOption == CurrentNPC.ItemLocation)
                 {
-                    KeyList.Add(CurrentNPC.ItemName);
+                    KeyList.Add(CurrentNPC.ItemName.ToLower());
                     PrintMessage(CurrentNPC.NPCname + " " + "got item");
                 }
             }
