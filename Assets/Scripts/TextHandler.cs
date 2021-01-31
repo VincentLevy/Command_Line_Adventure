@@ -264,7 +264,7 @@ public class TextHandler : MonoBehaviour
     {
         if (CurrentRoom.HasDownload())
         {
-            KeyList.Add(CurrentRoom.Download.ToLower());
+            Items.Add(CurrentRoom.Download.ToLower());
             PrintMessage("you have downloaded " + CurrentRoom.Download.ToLower());
         }
         else
