@@ -17,15 +17,31 @@ public class TextHandler : MonoBehaviour
     private Scrollbar Scrollbar;
     [SerializeField]
     private EventSystem EventSystem;
-    [SerializeField]
     private List<string> CommandList;
+
+    [SerializeField]
+    private Room StartingRoom;
+    private Room CurrentRoom;
+
+    private List<string> Inventory;
+
+    private bool IsTalking;
 
     public float offset = -1;
 
     // Start is called before the first frame update
     void Start()
     {
-        InputText.text = "hello world";
+        CommandList = new List<string>();
+        CommandList.Add("help");
+        CommandList.Add("go");
+        CommandList.Add("talk");
+        CommandList.Add("download");
+        CommandList.Add("execute");
+        CommandList.Add("objects");
+
+        Inventory = new List<string>();
+        CurrentRoom = StartingRoom;
     }
 
     // Update is called once per frame
@@ -59,14 +75,26 @@ public class TextHandler : MonoBehaviour
             return;
         }
 
-        if (ParcedCommand.Length != 2)
+        if(ParcedCommand[0] == "leave")
         {
-            PrintMessage("incorrect use of command");
+            IsTalking = false;
             return;
         }
 
+        if (IsTalking && ParcedCommand.Length != 0)
+        {
+            HandleTalk(ParcedCommand[0]);
+            return;
+        }
+
+        //if (ParcedCommand.Length != 2)
+        //{
+        //    PrintMessage("incorrect use of command");
+        //    return;
+        //}
+
         string CurrentCommand = ParcedCommand[0];
-        string CurrentArgument = ParcedCommand[1];
+        //string CurrentArgument = ParcedCommand[1];
 
         if (CommandList.Contains(ParcedCommand[0]))
         {
@@ -77,11 +105,12 @@ public class TextHandler : MonoBehaviour
                     break;
 
                 case "go":
-
+                    //GoToRoom(CurrentArgument);
+                    GoToRoom(ParcedCommand[1]);
                     break;
 
                 case "talk":
-
+                    TalkToNPC();
                     break;
 
                 case "download":
@@ -103,6 +132,76 @@ public class TextHandler : MonoBehaviour
         }
     }
 
+    private void HandleTalk(string option)
+    {
+        int parsedOption;
+        if(int.TryParse(option, out parsedOption))
+        {
+            if(parsedOption < 0 || parsedOption >= CurrentRoom.RoomNPC.DialogueOptions.Count)
+            {
+                PrintMessage("there is no such option");
+            }
+            else
+            {
+                PrintMessage(CurrentRoom.RoomNPC.DialogueResponses[parsedOption]);
+            }
+        }
+        else
+        {
+            PrintMessage("insert a number or say \"leave\" ");
+        }
+
+    }
+
+    private void TalkToNPC()
+    {
+        if (CurrentRoom.HasNPC())
+        {
+            IsTalking = true;
+
+            int i = 0;
+            foreach (string s in CurrentRoom.RoomNPC.DialogueOptions)
+            {
+                ShowOptions("[" + i++ + "]" + " " + s);
+            }
+        }
+        else
+        {
+            PrintMessage("there is nobody to talk here to");
+        }
+    }
+
+    private void GoToRoom(string direction)
+    {
+        if (CurrentRoom.HasRoomInDirection(direction))
+        {
+            switch (direction)
+            {
+                case "up":
+                    CurrentRoom = CurrentRoom.UpRoom;
+                    break;
+
+                case "down":
+                    CurrentRoom = CurrentRoom.DownRoom;
+                    break;
+
+                case "left":
+                    CurrentRoom = CurrentRoom.LeftRoom;
+                    break;
+
+                case "right":
+                    CurrentRoom = CurrentRoom.RightRoom;
+                    break;
+            }
+
+            PrintMessage(CurrentRoom.OpeningText);
+        }
+        else
+        {
+            PrintMessage("there is no such room");
+        }
+    }
+
     private void DisplayHelpMessage()
     {
         PrintMessage("Fuck you");
@@ -111,5 +210,10 @@ public class TextHandler : MonoBehaviour
     private void PrintMessage(string message)
     {
         HistoryText.text += "C:\\Users\\Bonzo>" + message + "\n";
+    }
+
+    private void ShowOptions(string options)
+    {
+        HistoryText.text += options + "\n";
     }
 }

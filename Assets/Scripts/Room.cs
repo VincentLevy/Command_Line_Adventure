@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Room
+public class Room : MonoBehaviour
 {
     public Room UpRoom;
     public Room DownRoom;
@@ -10,6 +10,11 @@ public class Room
     public Room LeftRoom;
 
     public List<string> ObjectList;
+
+    public string OpeningText;
+
+    public string Object;
+    public NPC RoomNPC;
 
     public bool HasRoomInDirection(string direction)
     {
@@ -53,5 +58,15 @@ public class Room
         }
 
         return false;
+    }
+
+    public bool HasObject()
+    {
+        return Object == "";
+    }
+
+    public bool HasNPC()
+    {
+        return RoomNPC != null;
     }
 }
