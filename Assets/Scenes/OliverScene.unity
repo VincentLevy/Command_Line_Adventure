@@ -1608,7 +1608,7 @@ GameObject:
   - component: {fileID: 1110762469}
   - component: {fileID: 1110762470}
   m_Layer: 0
-  m_Name: GlowFilesNPC
+  m_Name: GlowFilesItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1818,7 +1818,7 @@ MonoBehaviour:
   UpRoom: {fileID: 522388548}
   DownRoom: {fileID: 797162695}
   RightRoom: {fileID: 1363317625}
-  LeftRoom: {fileID: 0}
+  LeftRoom: {fileID: 1380685882}
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
@@ -1879,10 +1879,10 @@ MonoBehaviour:
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
-  OpeningText: "Walking off on the path to your right you notice a shiny object on
-    the ground. Bending over to look at it you realize it\u2019s a USB Drive. That\u2019s
-    some dandy stuff right there. Could come in handy, if you decide to download
-    it."
+  OpeningText: "Walking along a nearby pathway, you notice a shiny pile of stuff
+    on the ground. Bending over to look at it you realize it\u2019s a whole pile
+    of USB Drives! That\u2019s some dandy stuff right there. Could come in handy,
+    if you decide to download one of them."
   Download: usb
   RoomNPC: {fileID: 850930618}
 --- !u!1 &1377584282
@@ -1990,10 +1990,10 @@ MonoBehaviour:
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
-  OpeningText: "Heading west, you find what appears to be a big garbage dump of corrupted
-    files. A sign stands in front of you. It reads, \u201CCorrupted Files Garbage
-    Dump.\u201D Makes sense. Further west towards what might be the end of the dump
-    you can make out some sort of\u2026 storm? It feels evil.\r"
+  OpeningText: "You find what appears to be a big garbage dump of corrupted files.
+    A sign stands in front of you. It reads, \u201CCorrupted Files Garbage Dump.\u201D
+    Makes sense. Further west towards what might be the end of the dump you can make
+    out some sort of\u2026 storm? It feels evil.\r"
   Download: 
   RoomNPC: {fileID: 0}
 --- !u!1 &1429938723
@@ -2047,10 +2047,10 @@ MonoBehaviour:
   RequiredKeyName: 
   LockedDialogue: 
   OpeningText: This particular pile of corrupted files is glowing. Pretty crazy stuff.
-    Maybe you can download it onto some sort of storage device, if you ever happen
-    to feel the need to do something like that. Just in case.
+    Maybe you can download these glowing_files onto some sort of storage device,
+    if you ever happen to feel the need to do something like that. Just in case.
   Download: 
-  RoomNPC: {fileID: 0}
+  RoomNPC: {fileID: 1110762470}
 --- !u!1 &1452065919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,7 +2202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: Gatekeeper of Data Kingdom
+  NPCname: gatekeeper_of_data_kingdom
   DialogueOptions:
   - "What\u2019s good, G? "
   - "You uhhh lettin\u2019 anyone past that gate of yours? "
@@ -2797,7 +2797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: Jerry
+  NPCname: jerry
   DialogueOptions:
   - "You likin\u2019 the gallows, Jerry?"
   - You uh, know anything about this area?
