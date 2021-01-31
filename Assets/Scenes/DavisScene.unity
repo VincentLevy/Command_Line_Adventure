@@ -702,8 +702,8 @@ MonoBehaviour:
   OnExecuteDialogue: 
   ItemName: 
   KeyName: 
-  KeyLocation: 0
-  ItemLocation: 0
+  KeyLocation: 2
+  ItemLocation: 2
 --- !u!1 &522194715
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: eddy_the_error_code
+  NPCname: eddy
   DialogueOptions:
   - "\u201CWho might you be, stranger?\u201D"
   - "\u201CDo you think you could help me get out of here?\u201D"
@@ -937,15 +937,15 @@ MonoBehaviour:
     Eddy the Error Code. I cause a lot of problems for people so I just stay here
     myself.\u201D"
   - "\u201CI really wanna let you out, but I gotta ask you to do something for me
-    first. I\u2019ll let you out through the exit if you bring me back lost Stack
-    Overflow questions from Trash Heap Landia. I\u2019ll let you in there.\u201D"
+    first. I\u2019ll let you out through the exit to the left if you bring me back
+    lost Stack Overflow questions from Trash Heap Landia. I\u2019ll let you in there.\u201D"
   ExecutableName: stack_overflow_questions
-  OnExecuteDialogue: You gave Eddy what he wanted and now you have the key to escape
-    the tunnels.
+  OnExecuteDialogue: You gave Eddy what he wanted and now you have the debugging
+    message key to use on the exit above you.
   ItemName: 
   KeyName: debugging_message_key
-  KeyLocation: 0
-  ItemLocation: 0
+  KeyLocation: 2
+  ItemLocation: 2
 --- !u!1 &655701366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,7 +1108,7 @@ MonoBehaviour:
     the middle of the room. Above you is an exit out of the Tunnels of Lost Levels.
     To your left is Trash Heap Landia.
   Download: 
-  RoomNPC: {fileID: 0}
+  RoomNPC: {fileID: 605615044}
 --- !u!1 &947430308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,8 +1217,8 @@ MonoBehaviour:
   OnExecuteDialogue: 
   ItemName: 
   KeyName: 
-  KeyLocation: 0
-  ItemLocation: 0
+  KeyLocation: 2
+  ItemLocation: 2
 --- !u!1 &974045710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,8 +1323,8 @@ MonoBehaviour:
   OnExecuteDialogue: 
   ItemName: 
   KeyName: 
-  KeyLocation: 0
-  ItemLocation: 0
+  KeyLocation: 2
+  ItemLocation: 2
 --- !u!4 &1032162320
 Transform:
   m_ObjectHideFlags: 0
@@ -1429,17 +1429,18 @@ MonoBehaviour:
   - "\u201CI think you guys sorta kinda stole my levels, so I would really appreciate
     it if you could give them back.\u201D"
   DialogueResponses:
-  - "\u201CI will have you know we take such remarks as compliments. We embrace the
-    fact we don\u2019t have stereotypically pretty faces.\u201D"
+  - " \u201CI will have you know we take such remarks as compliments. We embrace
+    the fact we don\u2019t have stereotypically pretty faces.\u201D"
   - "\u201CTell ya what, you should head back the way you came before you irritate
     us anymore.\u201D"
   ExecutableName: mole_whacking_device
-  OnExecuteDialogue: You now have your lost levels back. Now you can check out that
-    sand you saw.
+  OnExecuteDialogue: You now have your lost levels back. You combine them with the
+    data decrypting shovel and can now use your lost levels to remove the sand to
+    your left to progress.
   ItemName: 
   KeyName: lost_levels
-  KeyLocation: 0
-  ItemLocation: 0
+  KeyLocation: 2
+  ItemLocation: 2
 --- !u!4 &1193196675
 Transform:
   m_ObjectHideFlags: 0
@@ -1694,7 +1695,8 @@ MonoBehaviour:
   LockedDialogue: 
   OpeningText: "You enter the territory of the merge conflict moles to retrieve your
     lost levels. It is quite unkempt seeing as moles are the ones who live here.
-    To your left is some loose sand, but you decide not to mess around with it until
+    Their leader is standing there waiting to see if you want to talk to him. To
+    your left is some loose sand, but you decide not to mess around with it until
     you recover your precious levels. Above you, you notice a winding staircase that
     is labeled \u201CTo the Baron.\u201D"
   Download: 
@@ -2325,10 +2327,11 @@ MonoBehaviour:
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
-  OpeningText: "You have chosen the correct room. The secret code has now been input
-    into the console. To get back to Eddy\u2019s lair, follow this path back: down,
-    left, down, right, down, right."
-  Download: 
+  OpeningText: "You have chosen the correct room. The secret code \u201CIDDQD\u201D 
+    has now been input into the console and you can now download the stack overflow
+    questions. To get back to Eddy\u2019s lair, follow this path back: down, left,
+    down, right, down, right."
+  Download: stack_overflow_questions
   RoomNPC: {fileID: 0}
 --- !u!1 &1780738837
 GameObject:
