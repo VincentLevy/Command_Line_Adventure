@@ -35,6 +35,7 @@ public class TextHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //adds commands
         CommandList = new List<string>();
         CommandList.Add("help");
         CommandList.Add("go");
@@ -45,11 +46,13 @@ public class TextHandler : MonoBehaviour
         CommandList.Add("items");
         //CommandList.Add("objects");
 
+        //initializes the lists
         KeyList = new List<string>();
         Items = new List<string>();
-        CurrentRoom = StartingRoom;
 
-        Items.Add("item");
+        //sets up the initial room
+        CurrentRoom = StartingRoom;
+        PrintMessage(CurrentRoom.OpeningText);
 
     }
 
