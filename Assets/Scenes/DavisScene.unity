@@ -123,6 +123,191 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &15806171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 15806173}
+  - component: {fileID: 15806172}
+  m_Layer: 0
+  m_Name: HackerRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &15806172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15806171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 996362921}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You approach the suspicious looking man. He\u2019s clad all in black,
+    with a balaclava obscuring his face. No one else is around. He cradles a laptop
+    in his arm, eyes glued to whatever is being displayed on its screen.\r"
+  Download: 
+  RoomNPC: {fileID: 179790982}
+--- !u!4 &15806173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15806171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.72, y: 1.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &18442266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18442267}
+  - component: {fileID: 18442268}
+  m_Layer: 0
+  m_Name: GatekeeperNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &18442267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18442266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &18442268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18442266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: gatekeeper_of_data_kingdom
+  DialogueOptions:
+  - "What\u2019s good, G? "
+  - "You uhhh lettin\u2019 anyone past that gate of yours? "
+  - 'What exact command would I need to use to go through this gate, assuming I had
+    the correct item? '
+  DialogueResponses:
+  - "\u201CHAIL, CITIZEN! THE GREAT DATA KINGDOM STANDS BEFORE YOU! I AM JULIUS,
+    ITS HUMBLE GUARDSMAN. BEYOND THIS GATE LIES DATA KINGDOM PLAZA.\u201D "
+  - "\u201CONLY IF I AM BROUGHT YOUR USER CREDENTIALS! PERHAPS TAKE A LOOK AROUND,
+    YOU MAY FIND THEM LOCKED UP IN SOME PASSWORD MANAGER SOFTWARE OR ANOTHER.\u201D "
+  - " \u201CEXCELLENT QUESTION, CITIZEN! YOU WOULD SIMPLY TYPE execute usercredentials
+    up INTO YOUR COMMAND LINE! AFTER THAT YOU NEED ONLY TYPE go up IN ORDER TO PROCEED
+    NORTHWARDS TO DATA KINGDOM PLAZA! WHETHER THE LETTERS ARE UPPER CASE OR LOWER
+    CASE IN ANY OF YOUR COMMANDS DOES NOT MATTER, BY THE WAY! Execute [item name]
+    [direction / item name] IS A WONDERFUL COMMAND! REMEMBER THIS, AS IT IS SURE
+    TO COME IN HANDY THROUGHOUT DATA KINGDOM! AND REMEMBER, YOU MAY TYPE help AT
+    ANY TIME IN ORDER TO PERUSE YOUR AVAILABLE LIST OF COMMANDS!\u201D "
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!1 &45226150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45226151}
+  - component: {fileID: 45226152}
+  m_Layer: 0
+  m_Name: DataGoblin2NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &45226151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45226150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &45226152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45226150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: data_goblin
+  DialogueOptions:
+  - You enjoying those files there?
+  - Hey, any chance I could take that Anti-Virus Software off your hands? I might
+    need it.
+  - "What\u2019s your name, buddy?"
+  DialogueResponses:
+  - MMMMGNGNGNGNGNGNGGGGGGGGGGGMMMMMMMMMMMMMMMM YES.
+  - MMMMGGGNNNNNNNNNNNNN DOWNLOAD SOME CORRUPTED FILES ONTO SOME STORAGE DRIVE OR
+    ANOTHER! GIVE IT TO ME USING execute [item name] data_goblin! I MUST DEVOUR MORE.
+    MMMGGGMMGMGMMMMMMmmmmmmm.
+  - GOBBY.
+  ExecutableName: corrupt_usb
+  OnExecuteDialogue: You hand the corrupted USB to the Data Goblin. The creature
+    swallows the thing whole, and chucks its anti-virus software at you. Thanks,
+    dude.
+  ItemName: antivirus_software
+  KeyName: 
+  KeyLocation: 5
+  ItemLocation: 5
 --- !u!1 &53946114
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +398,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53946114}
   m_CullTransparentMesh: 0
+--- !u!1 &77161798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77161800}
+  - component: {fileID: 77161799}
+  m_Layer: 0
+  m_Name: StartRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &77161799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77161798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 492505379}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "\u201CWoah. Looks like I\u2019m finally in the system,\u201D you
+    proclaim. \u201CTime to get in, get these game files, and get out. Paulie doesn\u2019t
+    like Data Kingdom, I don\u2019t like Data Kingdom, and I gotta get back before
+    my wife gets home.\u201D You survey your surroundings. Looks like even in cyberspace
+    Data Kingdom does, in fact, look like an actual medieval kingdom. A large gate
+    lies in front of you, beset by fifty foot high, god-knows-how-wide stone walls
+    on either side. A man clad in armor stands guard. On the other side of that gate,
+    you figure, lies all the game data your team lost after Gerald mucked up the
+    whole repository with that disastrous merge conflict."
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!4 &77161800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77161798}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &175748283
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175748284}
   m_Layer: 0
-  m_Name: NPCs
+  m_Name: Davis NPCs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -248,6 +494,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &179790980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179790981}
+  - component: {fileID: 179790982}
+  m_Layer: 0
+  m_Name: HackerNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &179790981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179790980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &179790982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179790980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: hacker
+  DialogueOptions:
+  - Hey.
+  - "Hey, I\u2019m looking for some game assets my team and I have lost, you know
+    anything about that?"
+  - "(Pretend to move on and secretly sneak behind him to look at his laptop screen)\r."
+  DialogueResponses:
+  - "The suspicious man doesn\u2019t reply."
+  - (The man looks up at you, then back at his laptop).
+  - "(You nonchalantly walk away, and sneak behind the man to check a look at whatever
+    the heck he\u2019s so interested in on his darned laptop. You can\u2019t believe
+    it. It\u2019s your game\u2019s main_character. This guy\u2019s a hacker! You\u2019ll
+    need some way to eliminate his presence from your Data Kingdom repository and
+    retrieve your main_character.)"
+  ExecutableName: anti_hacker_bat
+  OnExecuteDialogue: You swing the anti_hacker_bat at the hacker, shattering his
+    body into thousands of lines of matrix code. His laptop clatters to the ground,
+    and you pick it up, downloading your game's main_character off of it. You snap
+    the laptop across your knee. "That'll teach those pesky broskis not to mess with
+    MY company's game assets," you proclaim.
+  ItemName: 
+  KeyName: main_character
+  KeyLocation: 5
+  ItemLocation: 5
 --- !u!1 &245775704
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +613,118 @@ Transform:
   m_Children: []
   m_Father: {fileID: 541059905}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &293592725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 293592727}
+  - component: {fileID: 293592726}
+  m_Layer: 0
+  m_Name: GoblinRoom2
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &293592726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293592725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1154708592}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "Heading north another Data Goblin comes into view. This one appears
+    to be scarfing down a pile of corrupted files. A rectangular package lies next
+    to the Goblin. The words \u201CAnti-Virus Software,\u201D are printed on it in
+    big bold lettering.\r"
+  Download: 
+  RoomNPC: {fileID: 45226152}
+--- !u!4 &293592727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293592725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.67, y: 3.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &314494135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314494137}
+  - component: {fileID: 314494136}
+  m_Layer: 0
+  m_Name: BatRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &314494136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314494135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 996362921}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You come upon, of all things, a baseball bat stuck in a block of
+    stone. On the stone is engraved the lettering, \u201Canti_hacker_bat OF LEGEND.\u201D
+    Impressive. Perhaps this would be a useful tool to use against any nearby lurking
+    hackers.\r"
+  Download: 
+  RoomNPC: {fileID: 844273084}
+--- !u!4 &314494137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314494135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.83, y: 1.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &315503465
 GameObject:
@@ -384,6 +809,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &343767764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343767765}
+  - component: {fileID: 343767766}
+  m_Layer: 0
+  m_Name: VirusNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &343767765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343767764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &343767766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343767764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: virus
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: antivirus_software
+  OnExecuteDialogue: You take out the antivirus_software and throw it straight at
+    the malicious virus. It writhes in what appears to be quite a lot of pain, screeches,
+    and dissipates into the cyber aether. It leaves a whole lot of RAM on the ground.
+    You bend down and download all that sweet, sweet RAM.
+  ItemName: ram
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &348093279
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +1123,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368081194}
   m_CullTransparentMesh: 0
+--- !u!1 &492505378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492505380}
+  - component: {fileID: 492505379}
+  m_Layer: 0
+  m_Name: GatekeeperRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &492505379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492505378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 996362921}
+  DownRoom: {fileID: 77161799}
+  RightRoom: {fileID: 2117545046}
+  LeftRoom: {fileID: 1511180411}
+  isLocked: 0
+  RequiredKeyName: User Credentials
+  LockedDialogue: 
+  OpeningText: 'Moving towards the gate, you realize just how massive Data Kingdom
+    appears to be. You may be in for one heck of a doozy tonight. The armored guard
+    regards you, silently. '
+  Download: 
+  RoomNPC: {fileID: 18442268}
+--- !u!4 &492505380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492505378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495327095
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +1306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 541059905}
   m_Layer: 0
-  m_Name: Rooms
+  m_Name: Davis Rooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,6 +1481,99 @@ MonoBehaviour:
   KeyName: debugging_message_key
   KeyLocation: 2
   ItemLocation: 2
+--- !u!1 &607986567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607986568}
+  m_Layer: 0
+  m_Name: Oliver NPCs/Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607986568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607986567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.039009, y: 1.8638546, z: -21.055668}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 18442267}
+  - {fileID: 650042978}
+  - {fileID: 759908684}
+  - {fileID: 844273083}
+  - {fileID: 179790981}
+  - {fileID: 1449577330}
+  - {fileID: 780083755}
+  - {fileID: 45226151}
+  - {fileID: 343767765}
+  - {fileID: 1225466565}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &650042977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650042978}
+  - component: {fileID: 650042979}
+  m_Layer: 0
+  m_Name: ChestItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &650042978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650042977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &650042979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650042977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: chest
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: id_key
+  OnExecuteDialogue: You insert the id_key into the chest. It opens up, and you receive
+    your usercredentials. Wonderful.
+  ItemName: 
+  KeyName: usercredentials
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &655701366
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,6 +1627,232 @@ MonoBehaviour:
   OpeningText: You have chosen the wrong room. Go back and try again.
   Download: 
   RoomNPC: {fileID: 0}
+--- !u!1 &758769343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758769344}
+  - component: {fileID: 758769345}
+  m_Layer: 0
+  m_Name: GlowRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &758769344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758769343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.24, y: 1.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &758769345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758769343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1069024300}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: This particular pile of corrupted files is glowing. Pretty crazy stuff.
+    Maybe you can download these glowing_files onto some sort of storage device,
+    if you ever happen to feel the need to do something like that. Just in case.
+  Download: 
+  RoomNPC: {fileID: 1225466566}
+--- !u!1 &759908683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 759908684}
+  - component: {fileID: 759908685}
+  m_Layer: 0
+  m_Name: DataGoblinNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &759908684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759908683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &759908685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759908683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: 
+  DialogueOptions:
+  - "\u2018Sup? "
+  - "How\u2019s that steak, chief? "
+  - 'You know any ways to open this gate? '
+  DialogueResponses:
+  - 'MMMngmgmgmmm HELLO human, welcome to DATA KINGDOM!! MMngngmgmmmmmmmmmmm I am
+    the Tutorial Goblin. You must choose my Dialogue Option 2 in order to receive
+    the id_key, which you can use to open that chest over yonder! MMMNGNGNGMMMnnmmm.
+    (The Data Goblin gestures to a clearing near the gate, in the middle of which
+    sits an absurdly large treasure chest). '
+  - 'GOOD. MMMNGNGNGMMMMMMnnmmmmm. '
+  - 'MMMMMMGGGGNNGNGMMM YES YES! TAKE this id_key! (The Data Goblin slams a huge
+    golden key into your hands.) Use on that chest over yonder! (The Data Goblin
+    gestures to a clearing near the gate, in the middle of which sits an absurdly
+    large treasure chest). GO NOW! MMMNGNGNGNNNMMMMMMmmmm. '
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: id_key
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 2
+--- !u!1 &780083754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 780083755}
+  - component: {fileID: 780083756}
+  m_Layer: 0
+  m_Name: USBItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &780083755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780083754}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &780083756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780083754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: usb
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: usb
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!1 &844273082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844273083}
+  - component: {fileID: 844273084}
+  m_Layer: 0
+  m_Name: BatItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &844273083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844273082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &844273084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844273082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: anti_hacker_bat
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: ram
+  OnExecuteDialogue: Using the power of the additional RAM you downloaded, you seize
+    upon the anti_hacker_bat, and pull it from the stone in one swoop. You swing
+    it around for a bit and look really cool while doing so. Epic.
+  ItemName: anti_hacker_bat
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &884615352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +2133,69 @@ MonoBehaviour:
     a room above you labeled \u201CI\u201D and a room below you labeled \u201CQ.\u201D"
   Download: 
   RoomNPC: {fileID: 957226348}
+--- !u!1 &996362920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 996362922}
+  - component: {fileID: 996362921}
+  m_Layer: 0
+  m_Name: DKPlaza
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &996362921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996362920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1786025139}
+  DownRoom: {fileID: 492505379}
+  RightRoom: {fileID: 314494136}
+  LeftRoom: {fileID: 15806172}
+  isLocked: 1
+  RequiredKeyName: usercredentials
+  LockedDialogue: 
+  OpeningText: "You head into Data Kingdom Plaza. \u201CWell, here we are. Let\u2019s
+    see, I believe I need 3 assets in total. I need the {Main Character}, the {Levels},
+    and the {Gameplay Mechanics}.\u201D Knowing that your lost game assets are somewhere
+    out there, lying in the flaming trash heap of this absolute garbage dump of a
+    source control platform, fills you with determination. You look around. You appear
+    to be in a bonafide medieval town, with stone buildings and cows and gallows
+    and everything. You do know that if you squint hard enough you can see the matrix
+    in all these things, but hey, ignorance is bliss. An interesting shiny object
+    lies far to your right, a suspicious looking man Soviet squats on a street corner
+    to your left, and a friendly looking man stands directly north of you, seemingly
+    appreciating the craftsmanship of the town gallows.\r"
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!4 &996362922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996362920}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1032162318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +2256,120 @@ Transform:
   m_Father: {fileID: 175748284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1069024299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1069024301}
+  - component: {fileID: 1069024300}
+  m_Layer: 0
+  m_Name: VirusRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1069024300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069024299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 758769345}
+  RightRoom: {fileID: 1122260459}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You walk closer to the evil presence, and figure that this must be
+    some sort of virus. Into its miasma-like body it appears to be\u2026 inhaling?
+    eating? a giant stick of RAM. Viruses these days, am I right fellas? You reckon
+    if you need any extra RAM, taking this virus down might be a good way to do so.
+    While the virus is storming around on its own, you notice a glowing pile of corrupted
+    files to the south."
+  Download: 
+  RoomNPC: {fileID: 343767766}
+--- !u!4 &1069024301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069024299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.2, y: 2.57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1122260458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1122260460}
+  - component: {fileID: 1122260459}
+  m_Layer: 0
+  m_Name: DumpRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1122260459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122260458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 1786025139}
+  LeftRoom: {fileID: 1069024300}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You find what appears to be a big garbage dump of corrupted files.
+    A sign stands in front of you. It reads, \u201CCorrupted Files Garbage Dump.\u201D
+    Makes sense. Further west towards what might be the end of the dump you can make
+    out some sort of\u2026 storm? It feels evil.\r"
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!4 &1122260460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122260458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.68, y: 2.58, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1150546658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +2425,62 @@ MonoBehaviour:
     definitely ready to take them on now."
   Download: mole_whacking_device
   RoomNPC: {fileID: 0}
+--- !u!1 &1154708591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154708593}
+  - component: {fileID: 1154708592}
+  m_Layer: 0
+  m_Name: USBRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1154708592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154708591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 293592726}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1786025139}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "Walking along a nearby pathway, you notice a shiny pile of stuff
+    on the ground. Bending over to look at it you realize it\u2019s a whole pile
+    of USB Drives! That\u2019s some dandy stuff right there. Could come in handy,
+    if you decide to download one of them."
+  Download: usb
+  RoomNPC: {fileID: 780083756}
+--- !u!4 &1154708593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154708591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.67, y: 2.56, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193196673
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,6 +2596,60 @@ Transform:
   m_Father: {fileID: 541059905}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1225466564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225466565}
+  - component: {fileID: 1225466566}
+  m_Layer: 0
+  m_Name: GlowFilesItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225466565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225466564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225466566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225466564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: glowing_files
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: usb
+  OnExecuteDialogue: You thrust the USB drive into the glowing pile of files, and
+    vacuum cleanerly suck 'em all up, turning your USB into a corrupt_usb. That corrupt
+    data munching Data Goblin should enjoy this.
+  ItemName: corrupt_usb
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &1311822371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,6 +3058,71 @@ MonoBehaviour:
     domicile."
   Download: 
   RoomNPC: {fileID: 495327097}
+--- !u!1 &1449577329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449577330}
+  - component: {fileID: 1449577331}
+  m_Layer: 0
+  m_Name: JerryNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1449577330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449577329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 607986568}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1449577331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449577329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: jerry
+  DialogueOptions:
+  - "You likin\u2019 the gallows, Jerry?"
+  - You uh, know anything about this area?
+  DialogueResponses:
+  - "(The man snaps out of his admiration daze and looks at you.) Oh! A visitor!
+    Welcome to Data Kingdom. I\u2019m Jerry, as you could probably tell. I\u2019m
+    not terribly new here, though I\u2019m not a long time resident either. Though
+    yes, these gallows are quite interesting. They remind me of my ex-wife. (Jerry
+    does not bother to expound upon this, and goes back to staring at the gallows)."
+  - "(The man, who may or may not be Jerry, looks over at you). Hmmm, do I? I suppose
+    there\u2019s been a malicious RAM-gobbling virus over to the west lately, and
+    a corrupt data munching Data Goblin has taken up shelter to the east. (He goes
+    back to staring at the gallows). Some Lost Levels lie to the north, though you\u2019ll
+    need a character model of some sort in order to traverse them properly. You know,
+    for immersion and all that."
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &1451332869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,6 +3364,62 @@ Transform:
   m_Father: {fileID: 541059905}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1511180410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1511180412}
+  - component: {fileID: 1511180411}
+  m_Layer: 0
+  m_Name: ChestRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1511180411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511180410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 492505379}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "In a clearing to your left you perceive a large treasure Chest. Moving
+    closer to it, you can see the words \u201CPassManagerTM Official Treasure Chest\u201D
+    printed on it in a fine ink. It looks like you\u2019ll need some ID to pop this
+    bad boy open. "
+  Download: 
+  RoomNPC: {fileID: 650042979}
+--- !u!4 &1511180412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511180410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.78, y: 1.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562895432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,6 +3649,63 @@ MonoBehaviour:
     room above you or the \u201CI\u201D room to your right."
   Download: 
   RoomNPC: {fileID: 0}
+--- !u!1 &1786025138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1786025140}
+  - component: {fileID: 1786025139}
+  m_Layer: 0
+  m_Name: JerryRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1786025139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786025138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 2120231054}
+  DownRoom: {fileID: 996362921}
+  RightRoom: {fileID: 1154708592}
+  LeftRoom: {fileID: 1122260459}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You stroll right up next to the friendly looking man seemingly admiring
+    the not-so-friendly looking gallows. He seems lost in thought. Looking him up
+    and down you realize he seems a bit familiar, though you can\u2019t pin down
+    the exact reason for this. His posture? The expression on his face? You can\u2019t
+    tell. You notice a name badge clipped onto his shirt; it reads, \u201CJerry.\u201D"
+  Download: 
+  RoomNPC: {fileID: 1449577331}
+--- !u!4 &1786025140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786025138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 2.56, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794798998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,6 +3757,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &1794917284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1794917287}
+  - component: {fileID: 1794917286}
+  - component: {fileID: 1794917285}
+  m_Layer: 0
+  m_Name: Oliver Rooms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1794917285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794917284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: 
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!114 &1794917286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794917284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: 
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!4 &1794917287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794917284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8114544, y: 0.65028185, z: -21.735579}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 77161800}
+  - {fileID: 492505380}
+  - {fileID: 1511180412}
+  - {fileID: 2117545047}
+  - {fileID: 996362922}
+  - {fileID: 314494137}
+  - {fileID: 15806173}
+  - {fileID: 1786025140}
+  - {fileID: 1154708593}
+  - {fileID: 293592727}
+  - {fileID: 1122260460}
+  - {fileID: 1069024301}
+  - {fileID: 758769344}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1821267900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,6 +4287,62 @@ Transform:
   m_Father: {fileID: 541059905}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2117545045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2117545047}
+  - component: {fileID: 2117545046}
+  m_Layer: 0
+  m_Name: GoblinRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2117545046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117545045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 492505379}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "In a small copse to your right you come upon, my goodness, a real
+    live Data Goblin! The grumbly thing sits on a stone munching on a delicious looking
+    plate of holographic meatloaf. The creature doesn\u2019t look unfriendly; perhaps
+    the fellow can help you out. "
+  Download: 
+  RoomNPC: {fileID: 759908685}
+--- !u!4 &2117545047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117545045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.83, y: 1.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1794917287}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120231053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,12 +4373,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpRoom: {fileID: 0}
-  DownRoom: {fileID: 0}
+  DownRoom: {fileID: 1786025139}
   RightRoom: {fileID: 245775705}
   LeftRoom: {fileID: 1316565329}
-  isLocked: 0
-  RequiredKeyName: 
-  LockedDialogue: 
+  isLocked: 1
+  RequiredKeyName: main_character
+  LockedDialogue: You can't enter this area without the main_character, it seems.
   OpeningText: You enter the Tunnels of Lost Levels, a forgotten sector of Data Land.
     To your left, you hear mole-like noises. To your right, you see your good friend
     Jerry waiting to give you more advice.
