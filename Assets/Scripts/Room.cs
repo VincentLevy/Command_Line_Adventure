@@ -9,7 +9,7 @@ public class Room : MonoBehaviour
     public Room RightRoom;
     public Room LeftRoom;
     public bool isLocked;
-    public string KeyName;
+    //public string KeyName;
     public string RequiredKeyName;
     public string LockedDialogue;
 
@@ -18,8 +18,8 @@ public class Room : MonoBehaviour
     public string Download;
     public NPC RoomNPC;
 
-    public bool CanExecute;
-    public string ExecuteName;
+    //public bool CanExecute;
+    //public string ExecuteName;
 
     private bool HasBeenDowloaded;
 

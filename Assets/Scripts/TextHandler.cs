@@ -247,8 +247,14 @@ public class TextHandler : MonoBehaviour
                 PrintMessage(CurrentNPC.NPCname + ": " + CurrentNPC.DialogueResponses[parsedOption]);
                 if (CurrentNPC.HasKey() && parsedOption == CurrentNPC.KeyLocation)
                 {
-                    KeyList.Add(CurrentNPC.key);
+                    KeyList.Add(CurrentNPC.KeyName);
                     PrintMessage(CurrentNPC.NPCname + " " + "got key");
+                }
+
+                if(CurrentNPC.HasItem() && parsedOption == CurrentNPC.ItemLocation)
+                {
+                    KeyList.Add(CurrentNPC.ItemName);
+                    PrintMessage(CurrentNPC.NPCname + " " + "got item");
                 }
             }
         }
@@ -263,6 +269,12 @@ public class TextHandler : MonoBehaviour
     {
         if (CurrentRoom.HasNPC())
         {
+            if (CurrentRoom.RoomNPC.DialogueOptions.Count == 0)
+            {
+                PrintMessage("you can't talk to " + CurrentRoom.RoomNPC.NPCname);
+                return;
+            }
+
             IsTalking = true;
 
             int i = 0;

@@ -14,9 +14,10 @@ public class NPC : MonoBehaviour
     public string ItemName;
     public string KeyName;
 
-    public string key;
+    //public string key;
     [Header("put here what dialog option will give the key")]
     public int KeyLocation;
+    public int ItemLocation;
 
     public bool HasKey()
     {
