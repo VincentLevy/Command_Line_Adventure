@@ -29,6 +29,8 @@ public class TextHandler : MonoBehaviour
     private bool IsTalking;
 
     public float offset = -1;
+    [TextArea]
+    public string HelpMessage;
 
     // Start is called before the first frame update
     void Start()
@@ -39,13 +41,14 @@ public class TextHandler : MonoBehaviour
         CommandList.Add("talk");
         CommandList.Add("download");
         CommandList.Add("execute");
-        CommandList.Add("objects");
+        CommandList.Add("keys");
+        CommandList.Add("items");
+        //CommandList.Add("objects");
 
         KeyList = new List<string>();
         Items = new List<string>();
         CurrentRoom = StartingRoom;
 
-        Items.Add("item");
     }
 
     // Update is called once per frame
@@ -136,11 +139,41 @@ public class TextHandler : MonoBehaviour
 
                     HandleExecute(ParcedCommand[1], ParcedCommand[2]);
                     break;
+
+                case "items":
+                    ShowItems();
+                        break;
+
+                case "keys":
+                    ShowKeys();
+                    break;
             }
         }
         else
         {
             PrintMessage("there is no such command");
+        }
+    }
+
+    private void ShowKeys()
+    {
+        ShowOptions("current keys in possession: \n");
+        ShowOptions("keys are used to open doors \n");
+
+        foreach(string s in KeyList)
+        {
+            ShowOptions(s + " \n");
+        }
+    }
+
+    private void ShowItems()
+    {
+        ShowOptions("current items in possession: \n");
+        ShowOptions("items are used to execute commands on other objects \n");
+
+        foreach (string s in Items)
+        {
+            ShowOptions(s + " \n");
         }
     }
 
@@ -342,7 +375,8 @@ public class TextHandler : MonoBehaviour
 
     private void DisplayHelpMessage()
     {
-        PrintMessage("Fuck you");
+        //PrintMessage("Fuck you");
+        ShowOptions(HelpMessage);
     }
 
     private void PrintMessage(string message)
