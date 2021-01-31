@@ -45,8 +45,7 @@ public class TextHandler : MonoBehaviour
         Items = new List<string>();
         CurrentRoom = StartingRoom;
 
-        //debug code
-        KeyList.Add("aKey");
+        Items.Add("item");
     }
 
     // Update is called once per frame
@@ -145,19 +144,35 @@ public class TextHandler : MonoBehaviour
         }
     }
 
-    private void HandleExecute(string key, string room)
+    private void HandleExecute(string param1, string param2)
     {
-        if (KeyList.Contains(key))
+        if (KeyList.Contains(param1))
         {
-            OpenDoor(room, key);
+            OpenDoor(param2, param1);
         }
-        else if (Items.Contains(key))
+        else if (Items.Contains(param1))
         {
-            PrintMessage("not implemented");
+            if(param2 != CurrentRoom.RoomNPC.NPCname)
+            {
+                PrintMessage("there is nobody named " + param2 + " here");
+                return;
+            }
+
+            NPC CurrentNPC = CurrentRoom.RoomNPC;
+            PrintMessage(CurrentNPC.OnExecuteDialogue);
+
+            if (CurrentNPC.HasItem())
+            {
+                Items.Add(CurrentNPC.ItemName);
+            }
+            else if (CurrentNPC.HasKey())
+            {
+                KeyList.Add(CurrentNPC.KeyName);
+            }
         }
         else
         {
-            PrintMessage("there is no such thing as " + key);
+            PrintMessage("there is no such thing as " + param1);
         }
 
     }
@@ -195,7 +210,6 @@ public class TextHandler : MonoBehaviour
             PrintMessage("you don't have that");
             return;
         }
-
 
         if (room.IsLocked() && key == room.RequiredKeyName)
         {
