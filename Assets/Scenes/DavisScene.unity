@@ -242,6 +242,9 @@ Transform:
   m_Children:
   - {fileID: 1032162320}
   - {fileID: 1193196675}
+  - {fileID: 495327096}
+  - {fileID: 605615043}
+  - {fileID: 957226347}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -256,7 +259,7 @@ GameObject:
   - component: {fileID: 245775706}
   - component: {fileID: 245775705}
   m_Layer: 0
-  m_Name: Jerry
+  m_Name: Jerry Room
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -640,6 +643,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368081194}
   m_CullTransparentMesh: 0
+--- !u!1 &495327095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495327096}
+  - component: {fileID: 495327097}
+  m_Layer: 0
+  m_Name: baron
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495327096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495327095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 175748284}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495327097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495327095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: baron_von_byte
+  DialogueOptions:
+  - "\u201CSo, are you the one in charge here?\u201D"
+  - "\u201CMaybe you could help me out. See, I\u2019m trying to get my levels back
+    from those disgusting moles and I figured you would be the one to come to.\u201D"
+  DialogueResponses:
+  - "\u201CPerhaps, perhaps not. We are all in charge of ourselves. It matters not
+    what others think.\u201D"
+  - "\u201CYour suspicions are correct. I do have what you seek. I will help you
+    because I too find the moles quite annoying. Take the door to the right to reach
+    the Ditch of Debugging. It is there you will find a weapon to get rid of the
+    moles.\u201D"
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &522194715
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +715,7 @@ GameObject:
   - component: {fileID: 522194717}
   - component: {fileID: 522194716}
   m_Layer: 0
-  m_Name: Data-Decrypting Shovel Room
+  m_Name: Data Decrypting Shovel Room
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -677,11 +741,11 @@ MonoBehaviour:
   RequiredKeyName: 
   LockedDialogue: 
   OpeningText: "You followed Jerry\u2019s advice and stumble upon a shovel. But this
-    shovel isn\u2019t just any shovel. It\u2019s a data-decrypting shovel, an incredibly
+    shovel isn\u2019t just any shovel. It\u2019s a data decrypting shovel, an incredibly
     rare item almost no one has seen. Except for you and Jerry both finding it within
     5 minutes of each other. Anywho, that looks like everything in this room so you
     can head on back."
-  Download: Data-Decrypting Shovel
+  Download: data_decrypting_shovel
   RoomNPC: {fileID: 0}
 --- !u!4 &522194717
 Transform:
@@ -728,6 +792,21 @@ Transform:
   - {fileID: 245775706}
   - {fileID: 522194717}
   - {fileID: 1316565328}
+  - {fileID: 1436907487}
+  - {fileID: 1150546659}
+  - {fileID: 925872984}
+  - {fileID: 974045711}
+  - {fileID: 1222238128}
+  - {fileID: 1509008810}
+  - {fileID: 2098321334}
+  - {fileID: 947430310}
+  - {fileID: 1451332870}
+  - {fileID: 655701367}
+  - {fileID: 2024427717}
+  - {fileID: 1780738838}
+  - {fileID: 1736566608}
+  - {fileID: 1562895433}
+  - {fileID: 884615353}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -806,6 +885,400 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548566205}
   m_CullTransparentMesh: 0
+--- !u!1 &605615042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605615043}
+  - component: {fileID: 605615044}
+  m_Layer: 0
+  m_Name: eddy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &605615043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605615042}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 175748284}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &605615044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605615042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: eddy_the_error_code
+  DialogueOptions:
+  - "\u201CWho might you be, stranger?\u201D"
+  - "\u201CDo you think you could help me get out of here?\u201D"
+  DialogueResponses:
+  - "\u201CHiya there, I\u2019m not used to having strangers show up here. I\u2019m
+    Eddy the Error Code. I cause a lot of problems for people so I just stay here
+    myself.\u201D"
+  - "\u201CI really wanna let you out, but I gotta ask you to do something for me
+    first. I\u2019ll let you out through the exit if you bring me back lost Stack
+    Overflow questions from Trash Heap Landia. I\u2019ll let you in there.\u201D"
+  ExecutableName: stack_overflow_questions
+  OnExecuteDialogue: You gave Eddy what he wanted and now you have the key to escape
+    the tunnels.
+  ItemName: 
+  KeyName: debugging_message_key
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!1 &655701366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655701367}
+  - component: {fileID: 655701368}
+  m_Layer: 0
+  m_Name: Second Q Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655701367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655701366}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &655701368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655701366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 947430309}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You have chosen the wrong room. Go back and try again.
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!1 &884615352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884615353}
+  - component: {fileID: 884615354}
+  m_Layer: 0
+  m_Name: Exit to the Tunnels of Lost Levels
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &884615353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884615352}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &884615354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884615352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 925872985}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 1
+  RequiredKeyName: debugging_message_key
+  LockedDialogue: You need the debugging message key from Eddy first.
+  OpeningText: "You successfully used Eddy\u2019s debug message to escape the tunnels."
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!1 &925872983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 925872984}
+  - component: {fileID: 925872985}
+  m_Layer: 0
+  m_Name: Eddy the Error Code's Lair
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &925872984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925872983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8, y: -0.5, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925872985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925872983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 884615354}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 1316565329}
+  LeftRoom: {fileID: 974045712}
+  isLocked: 1
+  RequiredKeyName: lost_levels
+  LockedDialogue: You need your lost levels and the shovel Jerry mentioned before
+    getting in here.
+  OpeningText: After digging the sand out of the way and progressing forward, you
+    stumble upon the lair of a new figure, Eddy the Error Code, who is waiting in
+    the middle of the room. Above you is an exit out of the Tunnels of Lost Levels.
+    To your left is Trash Heap Landia.
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!1 &947430308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947430310}
+  - component: {fileID: 947430309}
+  m_Layer: 0
+  m_Name: First D Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &947430309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947430308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1451332871}
+  DownRoom: {fileID: 655701368}
+  RightRoom: {fileID: 1222238127}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You have chosen the correct room. Please now choose the \u201CD\u201D
+    room above you or the \u201CQ\u201D room below you."
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!4 &947430310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947430308}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &957226346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957226347}
+  - component: {fileID: 957226348}
+  m_Layer: 0
+  m_Name: computer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &957226347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957226346}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 175748284}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &957226348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957226346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: computer
+  DialogueOptions:
+  - "\u201CI\u2019m a little confused about how to solve this puzzle. Could I get
+    some help?\u201D"
+  DialogueResponses:
+  - "\u201COh silly human. The only sequence I can offer you to help you is 9/4/4/17/4.
+    Let this information guide you through the following rooms.\u201D"
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!1 &974045710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 974045711}
+  - component: {fileID: 974045712}
+  m_Layer: 0
+  m_Name: Trash Heap Landia
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &974045711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974045710}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &974045712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974045710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1222238127}
+  DownRoom: {fileID: 1509008809}
+  RightRoom: {fileID: 925872985}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "After going through the gate, you are now in Trash Heap Landia. In
+    the middle of the area is a computer console that asks you to correctly input
+    a secret code. Around you are a series of rooms you have to progress through
+    in the correct order. The rooms are labeled either \u201CI,\u201D \u201CD,\u201D
+    or \u201CQ.\u201D Entering the correct room will enter part of the secret code.
+    Entering the wrong room will force the player to go back. If you want, you could
+    ask this computer for a hint for this puzzle. In this starting room, you have
+    a room above you labeled \u201CI\u201D and a room below you labeled \u201CQ.\u201D"
+  Download: 
+  RoomNPC: {fileID: 957226348}
 --- !u!1 &1032162318
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +1290,7 @@ GameObject:
   - component: {fileID: 1032162320}
   - component: {fileID: 1032162319}
   m_Layer: 0
-  m_Name: JerryNPC
+  m_Name: jerry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,7 +1308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: Jerry
+  NPCname: jerry
   DialogueOptions:
   - "\u201CHiya, Jerry. You look like you have something to say. Got something for
     me?\u201D"
@@ -866,6 +1339,61 @@ Transform:
   m_Father: {fileID: 175748284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1150546658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1150546659}
+  - component: {fileID: 1150546660}
+  m_Layer: 0
+  m_Name: Ditch of Debugging
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1150546659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150546658}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 1, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150546660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150546658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1436907488}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "Per the Baron\u2019s suggestion, you arrive in the Ditch of Debugging.
+    Right in the center of the room is the ultimate mole whacking device. You are
+    definitely ready to take them on now."
+  Download: mole_whacking_device
+  RoomNPC: {fileID: 0}
 --- !u!1 &1193196673
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +1405,7 @@ GameObject:
   - component: {fileID: 1193196675}
   - component: {fileID: 1193196674}
   m_Layer: 0
-  m_Name: Test execute NPC
+  m_Name: mole_leader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -895,13 +1423,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: npc
-  DialogueOptions: []
-  DialogueResponses: []
-  ExecutableName: item
-  OnExecuteDialogue: you now have akey
+  NPCname: mole_leader
+  DialogueOptions:
+  - "\u201CAre all of you guys this hideous?\u201D"
+  - "\u201CI think you guys sorta kinda stole my levels, so I would really appreciate
+    it if you could give them back.\u201D"
+  DialogueResponses:
+  - "\u201CI will have you know we take such remarks as compliments. We embrace the
+    fact we don\u2019t have stereotypically pretty faces.\u201D"
+  - "\u201CTell ya what, you should head back the way you came before you irritate
+    us anymore.\u201D"
+  ExecutableName: mole_whacking_device
+  OnExecuteDialogue: You now have your lost levels back. Now you can check out that
+    sand you saw.
   ItemName: 
-  KeyName: aKey
+  KeyName: lost_levels
   KeyLocation: 0
   ItemLocation: 0
 --- !u!4 &1193196675
@@ -917,6 +1453,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 175748284}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1222238126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1222238128}
+  - component: {fileID: 1222238127}
+  m_Layer: 0
+  m_Name: First I Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1222238127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222238126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 974045712}
+  RightRoom: {fileID: 2098321333}
+  LeftRoom: {fileID: 947430309}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You have chosen the correct room. Please now choose the \u201CI\u201D
+    room to your right or the \u201CQ\u201D room to your left."
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!4 &1222238128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222238126}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1311822371
 GameObject:
@@ -1095,16 +1685,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpRoom: {fileID: 0}
+  UpRoom: {fileID: 1436907488}
   DownRoom: {fileID: 0}
   RightRoom: {fileID: 2120231054}
-  LeftRoom: {fileID: 0}
+  LeftRoom: {fileID: 925872985}
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
-  OpeningText: 
+  OpeningText: "You enter the territory of the merge conflict moles to retrieve your
+    lost levels. It is quite unkempt seeing as moles are the ones who live here.
+    To your left is some loose sand, but you decide not to mess around with it until
+    you recover your precious levels. Above you, you notice a winding staircase that
+    is labeled \u201CTo the Baron.\u201D"
   Download: 
-  RoomNPC: {fileID: 0}
+  RoomNPC: {fileID: 1193196674}
 --- !u!1 &1365551305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1860,115 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1436907486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1436907487}
+  - component: {fileID: 1436907488}
+  m_Layer: 0
+  m_Name: Baron Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1436907487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436907486}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.26, y: 1.1, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1436907488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436907486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1316565329}
+  RightRoom: {fileID: 1150546660}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You go up the stairs to encounter the ruler of this domain, Baron
+    von Byte himself. His room looks quite ornate, at least compared to the moles\u2019
+    domicile."
+  Download: 
+  RoomNPC: {fileID: 495327097}
+--- !u!1 &1451332869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451332870}
+  - component: {fileID: 1451332871}
+  m_Layer: 0
+  m_Name: Second D Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1451332870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451332869}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1451332871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451332869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 947430309}
+  RightRoom: {fileID: 1780738839}
+  LeftRoom: {fileID: 2024427718}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You have chosen the correct room. Please now choose the \u201CI\u201D
+    room to your left or the \u201CQ\u201D room to your right."
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &1459790339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,6 +2103,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459790339}
   m_CullTransparentMesh: 0
+--- !u!1 &1509008808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1509008810}
+  - component: {fileID: 1509008809}
+  m_Layer: 0
+  m_Name: First Q Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1509008809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509008808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 974045712}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You have chosen the wrong room. Go back and try again.
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!4 &1509008810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509008808}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1562895432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562895433}
+  - component: {fileID: 1562895434}
+  m_Layer: 0
+  m_Name: Fourth I Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1562895433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562895432}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562895434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562895432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1780738839}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You have chosen the wrong room. Go back and try again.
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &1567297279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,6 +2275,115 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1736566607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736566608}
+  - component: {fileID: 1736566609}
+  m_Layer: 0
+  m_Name: Third D Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1736566608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736566607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1736566609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736566607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1780738839}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You have chosen the correct room. The secret code has now been input
+    into the console. To get back to Eddy\u2019s lair, follow this path back: down,
+    left, down, right, down, right."
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!1 &1780738837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1780738838}
+  - component: {fileID: 1780738839}
+  m_Layer: 0
+  m_Name: Third Q Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1780738838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780738837}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1780738839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780738837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1736566609}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 1562895434}
+  LeftRoom: {fileID: 1451332871}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You have chosen the correct room. Please now choose the \u201CD\u201D
+    room above you or the \u201CI\u201D room to your right."
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &1794798998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +2672,59 @@ MonoBehaviour:
     something in the current room \n\nexecute [executable] [target]\nuse something,
     such as a key or item, on something else\ncan be used to open locked doors, like
     this:\n\"execute [key] [room direction]\" room direction = up, down, left, right"
+--- !u!1 &2024427716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2024427717}
+  - component: {fileID: 2024427718}
+  m_Layer: 0
+  m_Name: Third I Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2024427717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024427716}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024427718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024427716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 1451332871}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You have chosen the wrong room. Go back and try again.
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &2088119870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,6 +2824,59 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &2098321332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098321334}
+  - component: {fileID: 2098321333}
+  m_Layer: 0
+  m_Name: Second I Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2098321333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098321332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1222238127}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You have chosen the wrong room. Go back and try again.
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!4 &2098321334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098321332}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120231053
 GameObject:
   m_ObjectHideFlags: 0
