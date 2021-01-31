@@ -17,6 +17,10 @@ public class Room : MonoBehaviour
 
     public string Download;
     public NPC RoomNPC;
+
+    public bool CanExecute;
+    public string ExecuteName;
+
     private bool HasBeenDowloaded;
 
     public bool HasRoomInDirection(string direction)

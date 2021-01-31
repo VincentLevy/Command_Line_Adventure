@@ -23,7 +23,8 @@ public class TextHandler : MonoBehaviour
     private Room StartingRoom;
     private Room CurrentRoom;
 
-    private List<string> Inventory;
+    private List<string> KeyList;
+    private List<string> Items;
 
     private bool IsTalking;
 
@@ -40,8 +41,12 @@ public class TextHandler : MonoBehaviour
         CommandList.Add("execute");
         CommandList.Add("objects");
 
-        Inventory = new List<string>();
+        KeyList = new List<string>();
+        Items = new List<string>();
         CurrentRoom = StartingRoom;
+
+        //debug code
+        KeyList.Add("aKey");
     }
 
     // Update is called once per frame
@@ -55,7 +60,7 @@ public class TextHandler : MonoBehaviour
             Scrollbar.value = offset;
 
             if(LastCommand != "")
-                ProcessLastCommand(LastCommand.ToLower());
+                ProcessLastCommand(LastCommand);
         }
 
         //constantly selects the input field
@@ -106,6 +111,12 @@ public class TextHandler : MonoBehaviour
 
                 case "go":
                     //GoToRoom(CurrentArgument);
+                    if (ParcedCommand.Length < 2)
+                    {
+                        PrintMessage("wrong use of command, \"go\" needs a direction");
+                        return;
+                    }
+
                     GoToRoom(ParcedCommand[1]);
                     break;
 
@@ -118,11 +129,13 @@ public class TextHandler : MonoBehaviour
                     break;
 
                 case "execute":
-                    HandleExecute();
-                    break;
+                    if (ParcedCommand.Length < 2)
+                    {
+                        PrintMessage("wrong use of command, \"execute\" needs two parameters");
+                        return;
+                    }
 
-                case "objects":
-
+                    HandleExecute(ParcedCommand[1], ParcedCommand[2]);
                     break;
             }
         }
@@ -132,16 +145,70 @@ public class TextHandler : MonoBehaviour
         }
     }
 
-    private void HandleExecute()
+    private void HandleExecute(string key, string room)
     {
-        
+        if (KeyList.Contains(key))
+        {
+            OpenDoor(room, key);
+        }
+        else if (Items.Contains(key))
+        {
+            PrintMessage("not implemented");
+        }
+        else
+        {
+            PrintMessage("there is no such thing as " + key);
+        }
+
+    }
+
+    private void OpenDoor(string room, string key)
+    {
+        //get the desired room
+        //unlock it
+
+        switch (room)
+        {
+            case "up":
+                HandleExecuteKeyOnDoor(CurrentRoom.UpRoom, key);
+                break;
+
+            case "down":
+                HandleExecuteKeyOnDoor(CurrentRoom.DownRoom, key);
+                break;
+
+            case "right":
+                HandleExecuteKeyOnDoor(CurrentRoom.RightRoom, key);
+                break;
+
+            case "left":
+                HandleExecuteKeyOnDoor(CurrentRoom.LeftRoom, key);
+                break;
+        }
+    }
+
+    private void HandleExecuteKeyOnDoor(Room room, string key)
+    {
+        //in case the player does not have the key
+        if (!KeyList.Contains(key))
+        {
+            PrintMessage("you don't have that");
+            return;
+        }
+
+
+        if (room.IsLocked() && key == room.RequiredKeyName)
+        {
+            room.isLocked = false;
+            PrintMessage("used " + key);
+        }
     }
 
     private void Download()
     {
         if (CurrentRoom.HasDownload())
         {
-            Inventory.Add(CurrentRoom.Download);
+            KeyList.Add(CurrentRoom.Download);
             PrintMessage("you have downloaded " + CurrentRoom.Download);
         }
         else
@@ -166,7 +233,7 @@ public class TextHandler : MonoBehaviour
                 PrintMessage(CurrentNPC.NPCname + ": " + CurrentNPC.DialogueResponses[parsedOption]);
                 if (CurrentNPC.HasKey() && parsedOption == CurrentNPC.KeyLocation)
                 {
-                    Inventory.Add(CurrentNPC.key);
+                    KeyList.Add(CurrentNPC.key);
                     PrintMessage(CurrentNPC.NPCname + " " + "got key");
                 }
             }
@@ -203,55 +270,19 @@ public class TextHandler : MonoBehaviour
             switch (direction)
             {
                 case "up":
-                    if (!CurrentRoom.UpRoom.IsLocked())
-                    {
-                        CurrentRoom = CurrentRoom.UpRoom;
-                    }
-                    else
-                    {
-                        PrintMessage(CurrentRoom.UpRoom.LockedDialogue);
-                    }
+                    HandleRoomTransition(CurrentRoom.UpRoom);
                     break;
 
                 case "down":
-                    if (!CurrentRoom.DownRoom.IsLocked())
-                    {
-                        CurrentRoom = CurrentRoom.DownRoom;
-                    }
-                    else
-                    {
-                        PrintMessage(CurrentRoom.DownRoom.LockedDialogue);
-                    }
+                    HandleRoomTransition(CurrentRoom.DownRoom);
                     break;
 
                 case "left":
-                    //    //if it's not locked
-                    //    if (!CurrentRoom.LeftRoom.IsLocked())
-                    //    {
-                    //        CurrentRoom = CurrentRoom.LeftRoom;
-                    //    }
-                    //    //if the player has the key and the door is locked
-                    //    else if(CurrentRoom.LeftRoom.IsLocked() && Inventory.Contains(CurrentRoom.LeftRoom.RequiredKeyName))
-                    //    {
-                    //        CurrentRoom = CurrentRoom.LeftRoom;
-                    //    }
-                    //    //if it's locked and the player doesn't have the key
-                    //    else
-                    //    {
-                    //        PrintMessage(CurrentRoom.LeftRoom.LockedDialogue);
-                    //    }
                     HandleRoomTransition(CurrentRoom.LeftRoom);
                     break;
 
                 case "right":
-                    if (!CurrentRoom.RightRoom.IsLocked())
-                    {
-                        CurrentRoom = CurrentRoom.RightRoom;
-                    }
-                    else
-                    {
-                        PrintMessage(CurrentRoom.RightRoom.LockedDialogue);
-                    }
+                    HandleRoomTransition(CurrentRoom.RightRoom);
                     break;
             }
 
@@ -271,10 +302,11 @@ public class TextHandler : MonoBehaviour
             CurrentRoom = room;
         }
         //if the player has the key and the door is locked
-        else if (room.IsLocked() && Inventory.Contains(room.RequiredKeyName))
-        {
-            CurrentRoom = room;
-        }
+        //else if (room.IsLocked() && Inventory.Contains(room.RequiredKeyName))
+        //{
+        //    PrintMessage("used " + room.RequiredKeyName);
+        //    CurrentRoom = room;
+        //}
         //if it's locked and the player doesn't have the key
         else
         {
