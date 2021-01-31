@@ -153,9 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpRoom: {fileID: 0}
-  DownRoom: {fileID: 0}
+  DownRoom: {fileID: 217868248}
   RightRoom: {fileID: 0}
-  LeftRoom: {fileID: 1415656717}
+  LeftRoom: {fileID: 0}
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
@@ -170,7 +170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217868247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.41, y: 0.7483114, z: -20.469807}
+  m_LocalPosition: {x: 0.08, y: 2.07, z: -20.469807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -891,6 +891,12 @@ MonoBehaviour:
   EventSystem: {fileID: 935940900}
   StartingRoom: {fileID: 1415656717}
   offset: -0.2
+  HelpMessage: "Command List:\ngo [direction] \ngo to the next room in that direction\ndirection
+    = up, down, left, right\n\ntalk \ntalk to the npc in the current room, pick a
+    number after that to say something\n\nleave\nleave a conversation\n\ndownload\ndownload
+    something in the current room \n\nexecute [executable] [target]\nuse something,
+    such as a key or item, on something else\ncan be used to open locked doors, like
+    this:\n\"execute [key] [room direction]\" room direction = up, down, left, right"
 --- !u!1 &1250935166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,10 +1445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpRoom: {fileID: 0}
+  UpRoom: {fileID: 217868248}
   DownRoom: {fileID: 0}
-  RightRoom: {fileID: 217868248}
-  LeftRoom: {fileID: 2141696620}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
@@ -1844,7 +1850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141696619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.61, y: 0.7483114, z: -20.469807}
+  m_LocalPosition: {x: -3.74, y: 0.9, z: -20.469807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

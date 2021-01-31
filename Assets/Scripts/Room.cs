@@ -11,10 +11,10 @@ public class Room : MonoBehaviour
     public bool isLocked;
     //public string KeyName;
     public string RequiredKeyName;
+    [TextArea]
     public string LockedDialogue;
-
+    [TextArea]
     public string OpeningText;
-
     public string Download;
     public NPC RoomNPC;
 

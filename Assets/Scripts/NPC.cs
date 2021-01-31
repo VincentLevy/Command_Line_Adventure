@@ -5,11 +5,14 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     public string NPCname;
+    [TextArea]
     public List<string> DialogueOptions;
+    [TextArea]
     public List<string> DialogueResponses;
 
     //public bool CanExecute;
     public string ExecutableName;
+    [TextArea]
     public string OnExecuteDialogue;
     public string ItemName;
     public string KeyName;
