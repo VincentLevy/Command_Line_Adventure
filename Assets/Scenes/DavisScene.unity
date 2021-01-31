@@ -242,6 +242,7 @@ Transform:
   m_Children:
   - {fileID: 1032162320}
   - {fileID: 1193196675}
+  - {fileID: 495327096}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -256,7 +257,7 @@ GameObject:
   - component: {fileID: 245775706}
   - component: {fileID: 245775705}
   m_Layer: 0
-  m_Name: Jerry
+  m_Name: Jerry Room
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -640,6 +641,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368081194}
   m_CullTransparentMesh: 0
+--- !u!1 &495327095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495327096}
+  - component: {fileID: 495327097}
+  m_Layer: 0
+  m_Name: baron
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495327096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495327095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 175748284}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495327097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495327095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: 
+  DialogueOptions:
+  - "\u201CSo, are you the one in charge here?\u201D"
+  - "\u201CMaybe you could help me out. See, I\u2019m trying to get my levels back
+    from those disgusting moles and I figured you would be the one to come to.\u201D"
+  DialogueResponses:
+  - "\u201CPerhaps, perhaps not. We are all in charge of ourselves. It matters not
+    what others think.\u201D"
+  - "\u201CYour suspicions are correct. I do have what you seek. I will help you
+    because I too find the moles quite annoying. Take the door to the right to reach
+    the Ditch of Debugging. It is there you will find a weapon to get rid of the
+    moles.\u201D"
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &522194715
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +743,7 @@ MonoBehaviour:
     rare item almost no one has seen. Except for you and Jerry both finding it within
     5 minutes of each other. Anywho, that looks like everything in this room so you
     can head on back."
-  Download: Data-Decrypting Shovel
+  Download: shovel
   RoomNPC: {fileID: 0}
 --- !u!4 &522194717
 Transform:
@@ -728,6 +790,7 @@ Transform:
   - {fileID: 245775706}
   - {fileID: 522194717}
   - {fileID: 1316565328}
+  - {fileID: 1436907487}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -806,6 +869,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548566205}
   m_CullTransparentMesh: 0
+--- !u!1 &605615042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605615043}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &605615043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605615042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.27908826, y: 1.1991054, z: -21.451633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &925872983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 925872984}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &925872984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925872983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.27908826, y: 1.1991054, z: -21.451633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &974045710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 974045711}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &974045711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974045710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.27908826, y: 1.1991054, z: -21.451633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1032162318
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +970,7 @@ GameObject:
   - component: {fileID: 1032162320}
   - component: {fileID: 1032162319}
   m_Layer: 0
-  m_Name: JerryNPC
+  m_Name: jerry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -866,6 +1019,36 @@ Transform:
   m_Father: {fileID: 175748284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1150546658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1150546659}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1150546659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150546658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.27908826, y: 1.1991054, z: -21.451633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193196673
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +1060,7 @@ GameObject:
   - component: {fileID: 1193196675}
   - component: {fileID: 1193196674}
   m_Layer: 0
-  m_Name: Test execute NPC
+  m_Name: mole_leader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -896,12 +1079,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCname: npc
-  DialogueOptions: []
-  DialogueResponses: []
-  ExecutableName: item
-  OnExecuteDialogue: you now have akey
+  DialogueOptions:
+  - "\u201CAre all of you guys this hideous?\u201D"
+  - "\u201CI think you guys sorta kinda stole my levels, so I would really appreciate
+    it if you could give them back.\u201D"
+  DialogueResponses:
+  - "\u201CI will have you know we take such remarks as compliments. We embrace the
+    fact we don\u2019t have stereotypically pretty faces.\u201D"
+  - "\u201CTell ya what, you should head back the way you came before you irritate
+    us anymore.\u201D"
+  ExecutableName: mole_whacking_device
+  OnExecuteDialogue: 
   ItemName: 
-  KeyName: aKey
+  KeyName: 
   KeyLocation: 0
   ItemLocation: 0
 --- !u!4 &1193196675
@@ -1095,16 +1285,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpRoom: {fileID: 0}
+  UpRoom: {fileID: 1436907488}
   DownRoom: {fileID: 0}
   RightRoom: {fileID: 2120231054}
   LeftRoom: {fileID: 0}
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
-  OpeningText: 
+  OpeningText: "You enter the territory of the merge conflict moles to retrieve your
+    lost levels. It is quite unkempt seeing as moles are the ones who live here.
+    To your left is some loose sand, but you decide not to mess around with it until
+    you recover your precious levels. Above you, you notice a winding staircase that
+    is labeled \u201CTo the Baron.\u201D"
   Download: 
-  RoomNPC: {fileID: 0}
+  RoomNPC: {fileID: 1193196674}
 --- !u!1 &1365551305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1460,61 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1436907486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1436907487}
+  - component: {fileID: 1436907488}
+  m_Layer: 0
+  m_Name: Baron Room
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1436907487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436907486}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.26, y: 1.1, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1436907488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436907486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1316565329}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "You go up the stairs to encounter the ruler of this domain, Baron
+    von Byte himself. His room looks quite ornate, at least compared to the moles\u2019
+    domicile."
+  Download: 
+  RoomNPC: {fileID: 495327097}
 --- !u!1 &1459790339
 GameObject:
   m_ObjectHideFlags: 0
