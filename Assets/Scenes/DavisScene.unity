@@ -243,6 +243,8 @@ Transform:
   - {fileID: 1032162320}
   - {fileID: 1193196675}
   - {fileID: 495327096}
+  - {fileID: 605615043}
+  - {fileID: 957226347}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -684,7 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: 
+  NPCname: baron_von_byte
   DialogueOptions:
   - "\u201CSo, are you the one in charge here?\u201D"
   - "\u201CMaybe you could help me out. See, I\u2019m trying to get my levels back
@@ -713,7 +715,7 @@ GameObject:
   - component: {fileID: 522194717}
   - component: {fileID: 522194716}
   m_Layer: 0
-  m_Name: Data-Decrypting Shovel Room
+  m_Name: Data Decrypting Shovel Room
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -739,11 +741,11 @@ MonoBehaviour:
   RequiredKeyName: 
   LockedDialogue: 
   OpeningText: "You followed Jerry\u2019s advice and stumble upon a shovel. But this
-    shovel isn\u2019t just any shovel. It\u2019s a data-decrypting shovel, an incredibly
+    shovel isn\u2019t just any shovel. It\u2019s a data decrypting shovel, an incredibly
     rare item almost no one has seen. Except for you and Jerry both finding it within
     5 minutes of each other. Anywho, that looks like everything in this room so you
     can head on back."
-  Download: shovel
+  Download: data_decrypting_shovel
   RoomNPC: {fileID: 0}
 --- !u!4 &522194717
 Transform:
@@ -791,6 +793,9 @@ Transform:
   - {fileID: 522194717}
   - {fileID: 1316565328}
   - {fileID: 1436907487}
+  - {fileID: 1150546659}
+  - {fileID: 925872984}
+  - {fileID: 974045711}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -878,8 +883,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 605615043}
+  - component: {fileID: 605615044}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: eddy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -892,13 +898,43 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605615042}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27908826, y: 1.1991054, z: -21.451633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 175748284}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &605615044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605615042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: eddy_the_error_code
+  DialogueOptions:
+  - "\u201CWho might you be, stranger?\u201D"
+  - "\u201CDo you think you could help me get out of here?\u201D"
+  DialogueResponses:
+  - "\u201CHiya there, I\u2019m not used to having strangers show up here. I\u2019m
+    Eddy the Error Code. I cause a lot of problems for people so I just stay here
+    myself.\u201D"
+  - "\u201CI really wanna let you out, but I gotta ask you to do something for me
+    first. I\u2019ll let you out through the exit if you bring me back lost Stack
+    Overflow questions from Trash Heap Landia. I\u2019ll let you in there.\u201D"
+  ExecutableName: stack_overflow_questions
+  OnExecuteDialogue: You gave Eddy what he wanted and now you have the key to escape
+    the tunnels.
+  ItemName: 
+  KeyName: debugging_message_key
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &925872983
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,10 +944,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 925872984}
+  - component: {fileID: 925872985}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Eddy the Error Code's Lair
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -922,13 +959,95 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925872983}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27908826, y: 1.1991054, z: -21.451633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8, y: -0.5, z: -0.9818268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 541059905}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925872985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925872983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 1316565329}
+  LeftRoom: {fileID: 974045712}
+  isLocked: 1
+  RequiredKeyName: lost_levels
+  LockedDialogue: You need your lost levels and the shovel Jerry mentioned before
+    getting in here.
+  OpeningText: After digging the sand out of the way and progressing forward, you
+    stumble upon the lair of a new figure, Eddy the Error Code, who is waiting in
+    the middle of the room. Above you is an exit out of the Tunnels of Lost Levels.
+    To your left is Trash Heap Landia.
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!1 &957226346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957226347}
+  - component: {fileID: 957226348}
+  m_Layer: 0
+  m_Name: computer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &957226347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957226346}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 175748284}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &957226348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957226346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: computer
+  DialogueOptions:
+  - "\u201CI\u2019m a little confused about how to solve this puzzle. Could I get
+    some help?\u201D"
+  DialogueResponses:
+  - "\u201COh silly human. The only sequence I can offer you to help you is 9/4/4/17/4.
+    Let this information guide you through the following rooms.\u201D"
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &974045710
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,10 +1057,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 974045711}
+  - component: {fileID: 974045712}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: Trash Heap Landia
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -952,13 +1072,42 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974045710}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27908826, y: 1.1991054, z: -21.451633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 0.2991054, z: -0.9818268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 541059905}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &974045712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974045710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 925872985}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "After going through the gate, you are now in Trash Heap Landia. In
+    the middle of the area is a computer console that asks you to correctly input
+    a secret code. Around you are a series of rooms you have to progress through
+    in the correct order. The rooms are labeled either \u201CI,\u201D \u201CD,\u201D
+    or \u201CQ.\u201D Entering the correct room will enter part of the secret code.
+    Entering the wrong room will force the player to go back. If you want, you could
+    ask this computer for a hint for this puzzle. In this starting room, you have
+    a room above you labeled \u201CI\u201D and a room below you labeled \u201CQ.\u201D"
+  Download: 
+  RoomNPC: {fileID: 957226348}
 --- !u!1 &1032162318
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,7 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: Jerry
+  NPCname: jerry
   DialogueOptions:
   - "\u201CHiya, Jerry. You look like you have something to say. Got something for
     me?\u201D"
@@ -1028,10 +1177,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1150546659}
+  - component: {fileID: 1150546660}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Ditch of Debugging
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1042,13 +1192,37 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150546658}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27908826, y: 1.1991054, z: -21.451633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0190883, y: 1, z: -0.9818268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 541059905}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150546660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150546658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1436907488}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: "Per the Baron\u2019s suggestion, you arrive in the Ditch of Debugging.
+    Right in the center of the room is the ultimate mole whacking device. You are
+    definitely ready to take them on now."
+  Download: mole_whacking_device
+  RoomNPC: {fileID: 0}
 --- !u!1 &1193196673
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: npc
+  NPCname: mole_leader
   DialogueOptions:
   - "\u201CAre all of you guys this hideous?\u201D"
   - "\u201CI think you guys sorta kinda stole my levels, so I would really appreciate
@@ -1089,9 +1263,10 @@ MonoBehaviour:
   - "\u201CTell ya what, you should head back the way you came before you irritate
     us anymore.\u201D"
   ExecutableName: mole_whacking_device
-  OnExecuteDialogue: 
+  OnExecuteDialogue: You now have your lost levels back. Now you can check out that
+    sand you saw.
   ItemName: 
-  KeyName: 
+  KeyName: lost_levels
   KeyLocation: 0
   ItemLocation: 0
 --- !u!4 &1193196675
@@ -1288,7 +1463,7 @@ MonoBehaviour:
   UpRoom: {fileID: 1436907488}
   DownRoom: {fileID: 0}
   RightRoom: {fileID: 2120231054}
-  LeftRoom: {fileID: 0}
+  LeftRoom: {fileID: 925872985}
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
@@ -1505,7 +1680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpRoom: {fileID: 0}
   DownRoom: {fileID: 1316565329}
-  RightRoom: {fileID: 0}
+  RightRoom: {fileID: 1150546660}
   LeftRoom: {fileID: 0}
   isLocked: 0
   RequiredKeyName: 
