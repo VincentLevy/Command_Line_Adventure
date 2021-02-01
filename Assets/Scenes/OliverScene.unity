@@ -123,6 +123,64 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71230655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71230656}
+  - component: {fileID: 71230657}
+  m_Layer: 0
+  m_Name: ErrorCavernRoom7
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71230656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71230655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.53, y: 2.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &71230657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71230655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1335476596}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You head east, and enter a small chamber. A stone tablet lies in the
+    center. You pick up the tablet. Scrawled on it in what appears to be Coral Blue
+    #2 Lipstick, it reads, "B A Start." Woah! This is the 2nd half of that cheat
+    code you used on that arcade game all those years ago! Oh boy, using the 1st
+    half of the code on this cheatcode_2 would complete the whole thing! Now that
+    would most certifiably be dope and super fresh dawg wow.
+  Download: 
+  RoomNPC: {fileID: 77525161}
 --- !u!1 &76434704
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +234,105 @@ MonoBehaviour:
   KeyName: usercredentials
   KeyLocation: 0
   ItemLocation: 0
+--- !u!1 &77525159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77525160}
+  - component: {fileID: 77525161}
+  m_Layer: 0
+  m_Name: Code2Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &77525160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77525159}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &77525161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77525159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: cheatcode_2
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: cheatcode_1
+  OnExecuteDialogue: 'You open up cheatcode_1 on your Notepad.exe and, holding the
+    software in your hand, high five it onto the cheatcode_2 tablet. A blinding light
+    shines, and when it fades away you see the full_cheat_code written on the tablet:
+    Up Up Down Down Left Right Left Right B A Start. Incredible. You tear up, bearing
+    witness to this wonderful piece of history. You can''t wait to use this thing
+    on the next Gragius arcade_machine you find.'
+  ItemName: full_cheat_code
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!1 &92366048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 92366049}
+  m_Layer: 0
+  m_Name: SEC2NPCs/Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &92366049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92366048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6986641, y: 12.5813265, z: -22.479235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1544791195}
+  - {fileID: 239674237}
+  - {fileID: 1647863194}
+  - {fileID: 396233121}
+  - {fileID: 2003263119}
+  - {fileID: 1065741770}
+  - {fileID: 77525160}
+  - {fileID: 1853092044}
+  - {fileID: 1965960714}
+  - {fileID: 1961210456}
+  - {fileID: 624026491}
+  - {fileID: 1816258030}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &136882740
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +484,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136882740}
   m_CullTransparentMesh: 0
+--- !u!1 &138975055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 138975056}
+  - component: {fileID: 138975057}
+  m_Layer: 0
+  m_Name: ErrorCavernRoom2
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &138975056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138975055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.59, y: 2.41, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &138975057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138975055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 414568830}
+  DownRoom: {fileID: 227231354}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: In the northern hallway you can make out some kind of stone tablet,
+    in a room even further north. Who the heck made it so dark in the Error Cavern
+    anyway? Like, when I get an error I want to know exactly what happened. What's
+    the deal with that stuff? *very loud laugh track*
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &170963640
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +787,115 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &227231352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 227231353}
+  - component: {fileID: 227231354}
+  m_Layer: 0
+  m_Name: ErrorCavernRoom1
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &227231353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227231352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.59, y: 1.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &227231354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227231352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 138975057}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1858947632}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You enter the dark cavern. A sign at the entrance reads, scrawled
+    in crayon, "Error Cavern." "Great," you think. "That doesn't sound annoying."
+    It looks like there are some passageways to the north and to the east.
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!1 &239674236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 239674237}
+  - component: {fileID: 239674238}
+  m_Layer: 0
+  m_Name: MiceItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &239674237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239674236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239674238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239674236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: 
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: mousecord
+  OnExecuteDialogue: You throw the mousecord like a lasso, catching one of the cordless
+    gaming mice and slinging it straight into your hands. This particular gaming
+    mouse has now been corded up, ready to go. Bada bing.
+  ItemName: mouse
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &266625299
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +1011,61 @@ MonoBehaviour:
     such as a key or item, on something else\ncan be used to open locked doors, like
     this:\n\"execute [key] [room direction]\" room direction = up, down, left, right\n\nitems\nshows
     you a list of the items you have\n\nkeys\nshows you a list of the keys you have"
+--- !u!1 &396233120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 396233121}
+  - component: {fileID: 396233122}
+  m_Layer: 0
+  m_Name: DoomsayerNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &396233121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396233120}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &396233122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396233120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: doomsayer
+  DialogueOptions:
+  - Can I help you?
+  DialogueResponses:
+  - NO! NO ONE CAN HELP US! JERRY WILL CONSUME US ALL! HE'S A DEMON I TELL YE, A
+    DEMON! JERRY WILL BRING RUIN TO DATA KINGDOM, AND NO ONE CAN STOP HIM!
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 5
+  ItemLocation: 5
 --- !u!1 &397010729
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +1240,64 @@ RectTransform:
   m_AnchoredPosition: {x: 155.8, y: -469.99976}
   m_SizeDelta: {x: 1442.2733, y: 88.03551}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &414568828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414568829}
+  - component: {fileID: 414568830}
+  m_Layer: 0
+  m_Name: ErrorCavernRoom3
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &414568829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414568828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.59, y: 3.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &414568830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414568828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 138975057}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: 'You enter the room with the stone tablet. You bend down and brush
+    the dust off the tablet. It reads, "Up Up Down Down Left Right Left Right." WAIT
+    a minute! That''s the first half of that cheat code you used on that old arcade
+    game so many years ago! You feel a powerful force emanating from the cheatcode_1.
+    This has to come in handy somewhere, somehow. All you need is some kind of note
+    taking software so that you can write it all down. '
+  Download: 
+  RoomNPC: {fileID: 1065741771}
 --- !u!1 &488591015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1659,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614673804}
   m_CullTransparentMesh: 0
+--- !u!1 &624026490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 624026491}
+  - component: {fileID: 624026492}
+  m_Layer: 0
+  m_Name: FrankNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &624026491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624026490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &624026492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624026490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: frank
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: god_sword
+  OnExecuteDialogue: You pick up the god_sword and plunge it straight into Frank's
+    chest, a millisecond before he could hit you with his Frank Punch of Blood or
+    whatever it was called. "NOOOOOOOOOOOOOOO!" Frank screams. "MY LEGACYYYYYYYYYYYY!!!!!!!!!!!!!!!!!!"
+    Frank explodes into a fountain of matrix code before your very eyes, and is vanquished.
+    You have been given the neo_key. Suddenly, you see something north of you. Perhaps
+    you can use that neo_key to get out of here.
+  ItemName: 
+  KeyName: neo_key
+  KeyLocation: 0
+  ItemLocation: 0
 --- !u!1 &634685618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,6 +1777,61 @@ Transform:
   m_Father: {fileID: 488591018}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &735663767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735663768}
+  - component: {fileID: 735663769}
+  m_Layer: 0
+  m_Name: ErrorCavernRoom4
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &735663768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735663767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.68, y: 1.77, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &735663769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735663767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1335476596}
+  DownRoom: {fileID: 1082347380}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 227231354}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You enter the passageway to the east of the entrance. Nothing's in
+    here, though it looks like there are two more passageways, one to the south and
+    one to the north.
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &782915547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +2034,60 @@ MonoBehaviour:
     appreciating the craftsmanship of the town gallows.\r"
   Download: 
   RoomNPC: {fileID: 0}
+--- !u!1 &802775148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 802775149}
+  - component: {fileID: 802775150}
+  m_Layer: 0
+  m_Name: ErrorCavernRoom8
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &802775149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802775148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.54, y: 3.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802775150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802775148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1335476596}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You head further up the passageway to the north. This seems to be
+    a dead end. "Maybe I should head back the way I came," you wonder.
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &850930616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +2140,64 @@ MonoBehaviour:
   KeyName: 
   KeyLocation: 0
   ItemLocation: 0
+--- !u!1 &889479991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889479992}
+  - component: {fileID: 889479993}
+  m_Layer: 0
+  m_Name: MorpheusRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &889479992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889479991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 6.78, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &889479993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889479991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1448829197}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You head north. You enter a blindingly white room, barren except for
+    what lies in the center. What lies in the center is a man clad in a trench coat
+    and really cool glasses that balance on his nose in a really dope way, reclining
+    on a large leather chair. He seems like the type of guy you could have an interesting
+    conversation with. On a table in front of him sits a computer, with a slot labeled
+    "neo_key."
+  Download: 
+  RoomNPC: {fileID: 1816258031}
 --- !u!1 &937776294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,6 +2256,229 @@ MonoBehaviour:
     files to the south."
   Download: 
   RoomNPC: {fileID: 170963642}
+--- !u!1 &1019383327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1019383328}
+  - component: {fileID: 1019383329}
+  m_Layer: 0
+  m_Name: InputHovelRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1019383328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019383327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.26, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1019383329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019383327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1510927178}
+  RightRoom: {fileID: 1706107704}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You enter the Input Hovel. Hundreds of different methods of input
+    line the walls. Keyboards, mice, trackballs, motion sensors, even a few chicken
+    tenders here and there. A woman stands near one wall, looking at the mice. She
+    looks distraught. To the south, outside the store, you can see an old man dressed
+    in rags, shouting about something.
+  Download: 
+  RoomNPC: {fileID: 1647863195}
+--- !u!1 &1063980028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1063980029}
+  - component: {fileID: 1063980030}
+  m_Layer: 0
+  m_Name: FDRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1063980029
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063980028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 5.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1063980030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063980028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1448829197}
+  DownRoom: {fileID: 1539500071}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You walk north of the Code Castle, toward the back of Data Kingdom,
+    where you figure the exit is. Suddenly darkness clouds your vision; you blink
+    several times, and open your eyes to a new dimension. You stand on a platform
+    floating through some kind of shadowy space vortex. A light flashes, and a figure
+    appears in front of you. Wait, is that Jerry? Impossible.
+  Download: 
+  RoomNPC: {fileID: 1961210457}
+--- !u!1 &1065741769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1065741770}
+  - component: {fileID: 1065741771}
+  m_Layer: 0
+  m_Name: Code1Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1065741770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065741769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1065741771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065741769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: cheatcode_1
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: notepad.exe
+  OnExecuteDialogue: You whip out your Notepad.exe and write down the cheat code
+    chunk written on the tablet. The second half of the code must be somewhere else
+    in this cave, you figure.
+  ItemName: cheatcodefirsthalf
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!1 &1082347378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082347379}
+  - component: {fileID: 1082347380}
+  m_Layer: 0
+  m_Name: ErrorCavernRoom6
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1082347379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082347378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.68, y: 0.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1082347380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082347378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1335476596}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You enter the passageway to the east of the entrance. Nothing's in
+    here, though it looks like there are two more passageways, one to the south and
+    one to the north.
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &1110762468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,6 +2533,124 @@ MonoBehaviour:
   KeyName: 
   KeyLocation: 0
   ItemLocation: 0
+--- !u!1 &1118226647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118226648}
+  - component: {fileID: 1118226649}
+  m_Layer: 0
+  m_Name: BasementRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118226648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118226647}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.88, y: -1.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1118226649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118226647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1974478623}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You head down the stairs, into the Code Tavern basement. Squinting
+    in the dark, you see a bunch of cordless gaming mice scurrying around! Yuck.
+    What use is a mouse without a cord anyway? I mean, what's the deal with that?
+    *laugh track* Anyway there's also a door to your right labeled "Keyboard Closet,"
+    though it looks like it requires some sort of admin_password to enter.
+  Download: 
+  RoomNPC: {fileID: 239674238}
+--- !u!1 &1217627807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217627808}
+  - component: {fileID: 1217627809}
+  m_Layer: 0
+  m_Name: ROMFestivalRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1217627808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217627807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.81, y: 1.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1217627809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217627807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 1858947632}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: Heading west the festival comes closer into view. A large banner reads,
+    "ROM Festival." You can see rows upon rows of arcade_machines blipping and blopping
+    away, data goblins lined up for almost each and every one. There does appear
+    to be one open machine, though. Directly in front of you stands a tall, shiny
+    arcade_machine bearing the title "Gragius." Sounds similar to an old 2D shoot-em-up
+    you used to play. You wonder if that old famous cheat code you always used on
+    it still works; who knows, it could be lying around here in Data Kingdom. What
+    was the code again? Damn. You don't remember; in your old age you figure you'd
+    probably need some kind of note taking software in order to remember it nowadays.
+  Download: 
+  RoomNPC: {fileID: 2003263120}
 --- !u!1 &1282341428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,6 +2772,61 @@ MonoBehaviour:
   KeyName: 
   KeyLocation: 0
   ItemLocation: 2
+--- !u!1 &1335476595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335476597}
+  - component: {fileID: 1335476596}
+  m_Layer: 0
+  m_Name: ErrorCavernRoom5
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1335476596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335476595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 802775150}
+  DownRoom: {fileID: 735663769}
+  RightRoom: {fileID: 71230657}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You enter the northern passageway to the east of the entrance. Nothing's
+    in here, though it looks like there are two more passageways, one to the east
+    and one to the north.
+  Download: 
+  RoomNPC: {fileID: 0}
+--- !u!4 &1335476597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335476595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.68, y: 2.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1353856630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,6 +3051,64 @@ MonoBehaviour:
     out some sort of\u2026 storm? It feels evil.\r"
   Download: 
   RoomNPC: {fileID: 0}
+--- !u!1 &1426520711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426520712}
+  - component: {fileID: 1426520713}
+  m_Layer: 0
+  m_Name: KeyboardRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1426520712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426520711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.03, y: -1.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1426520713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426520711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1118226649}
+  isLocked: 1
+  RequiredKeyName: admin_password
+  LockedDialogue: You'll need some kind of admin_password to get into this room,
+    it seems.
+  OpeningText: You head down the stairs, into the Code Tavern basement. Squinting
+    in the dark, you see a bunch of cordless gaming mice scurrying around! Yuck.
+    What use is a mouse without a cord anyway? I mean, what's the deal with that?
+    *laugh track* Anyway there's also a door to your right labeled "Keyboard Closet,"
+    though it looks like it requires some sort of admin_password to enter.
+  Download: keyboard
+  RoomNPC: {fileID: 0}
 --- !u!1 &1429938723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,6 +3164,64 @@ MonoBehaviour:
     if you ever happen to feel the need to do something like that. Just in case.
   Download: 
   RoomNPC: {fileID: 1110762470}
+--- !u!1 &1448829195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1448829196}
+  - component: {fileID: 1448829197}
+  m_Layer: 0
+  m_Name: AboveFDRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1448829196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448829195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 5.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448829197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448829195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 889479993}
+  DownRoom: {fileID: 1063980030}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You decide you have no choice. You leap into the vortex, and come
+    out the other side into what appears to be a large stadium. A shining sword lies
+    on the ground. Engraved in it are the words, "Delete_Frank.exe." How convenient.
+    If you downloaded this god_sword, you could execute it on Frank, who, by the
+    way, has followed you through the vortex and is about to kill you with his Frank
+    Punch of Doom and Violence.
+  Download: god_sword
+  RoomNPC: {fileID: 624026492}
 --- !u!1 &1452065919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +3515,238 @@ MonoBehaviour:
   KeyName: 
   KeyLocation: 5
   ItemLocation: 5
+--- !u!1 &1510927176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1510927177}
+  - component: {fileID: 1510927178}
+  m_Layer: 0
+  m_Name: DoomsayerRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1510927177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510927176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.26, y: -1.29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1510927178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510927176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1019383329}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: Heading out and south of the Input Hovel, you come upon the raggedy
+    dressed-in-rags old man, ranting and raving about something. Maybe he's got something
+    interesting to say? Though he might just be crazy, idk man.
+  Download: 
+  RoomNPC: {fileID: 396233122}
+--- !u!1 &1539500069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539500070}
+  - component: {fileID: 1539500071}
+  m_Layer: 0
+  m_Name: CastleRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1539500070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539500069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 4.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1539500071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539500069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1063980030}
+  DownRoom: {fileID: 1871357845}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You walk into the Code Castle. Perhaps the "Code King" is here, haha,
+    now wouldn't that be funny. Oh wait no yeah he's right over there in the throne
+    room; a huge golden plaque above the entranceway says "CODE KING'S ROOM." You
+    walk in, and perceive the Code King in all his glory, or whatever. He's got to
+    know what happened to your gameplay_mechanics.
+  Download: 
+  RoomNPC: {fileID: 1965960715}
+--- !u!1 &1544791194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1544791195}
+  - component: {fileID: 1544791196}
+  m_Layer: 0
+  m_Name: JoeyNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1544791195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544791194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1544791196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544791194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: joey
+  DialogueOptions:
+  - The drinks here any good?
+  - I'm looking for some lost gameplay_mechanics, you know anything about that?
+  DialogueResponses:
+  - (The man takes a sip of his C++ocktail). Yeah dude! This place rocks! I come
+    here basically every day, me and my two mechanical gaming keyboards. (He shows
+    you his two mechanical gaming keyboards). Though not gonna lie, I've been thinkin'
+    about getting a third keyboard, you know, to spice things up. They call me Joey
+    Two Keyboards, by the way.
+  - (The keyboard-wielding fellow looks at you and laughs.) You serious, bro? The
+    code_king just picked up some new gameplay_mechanics the other day! He's probably
+    messin' around with those things up in his castle as we speak. I got no idea
+    how to help you out, man, but hey, if you bring me a third keyboard I can give
+    you some pretty sick software, you know what I mean? That's right baby, I got
+    this brand new Notepad.exe right here. Real handy for writin' stuff down that
+    you can't remember on your own.
+  ExecutableName: keyboard
+  OnExecuteDialogue: You hand the mechanical gaming keyboard to Joey Two Keyboards,
+    or as they call him now, Joey Three Keyboards. "Thanks dude!" he says, and tosses
+    you his brand new copy of Notepad.exe. This'll come in real handy for writin
+    any important stuff down.
+  ItemName: notepad.exe
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!1 &1568483450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1568483451}
+  m_Layer: 0
+  m_Name: SEC2Rooms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1568483451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568483450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6986641, y: 12.5813265, z: -22.479235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1706107703}
+  - {fileID: 1974478622}
+  - {fileID: 1118226648}
+  - {fileID: 1019383328}
+  - {fileID: 1510927177}
+  - {fileID: 1426520712}
+  - {fileID: 1858947631}
+  - {fileID: 1217627808}
+  - {fileID: 227231353}
+  - {fileID: 1871357844}
+  - {fileID: 138975056}
+  - {fileID: 414568829}
+  - {fileID: 735663768}
+  - {fileID: 1335476597}
+  - {fileID: 1082347379}
+  - {fileID: 71230656}
+  - {fileID: 802775149}
+  - {fileID: 1539500070}
+  - {fileID: 1063980029}
+  - {fileID: 1448829196}
+  - {fileID: 889479992}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1587030859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,6 +3878,66 @@ MonoBehaviour:
     MY company's game assets," you proclaim.
   ItemName: 
   KeyName: main_character
+  KeyLocation: 5
+  ItemLocation: 5
+--- !u!1 &1647863193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1647863194}
+  - component: {fileID: 1647863195}
+  m_Layer: 0
+  m_Name: BartenderNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1647863194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647863193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1647863195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647863193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: codetavern_bartender
+  DialogueOptions:
+  - You need any help, ma'am?
+  DialogueResponses:
+  - (She turns and looks at you). As a matter of fact I do, my guy. I run the nearby
+    Code Tavern, and I need a new mouse to keep things running smoothly. You know
+    that Keyboard Closet down in the basement of the tavern? I can give you the admin_password
+    to that room if you can get me a new mouse, with a cord and everything. The ones
+    they got here in the store just aren't up to snuff.
+  ExecutableName: mouse
+  OnExecuteDialogue: You hand the non-cordless mouse to the bartender. She smiles
+    and gives you the admin_password. "Thanks muchacho, this'll get me some real
+    nice clicks."
+  ItemName: 
+  KeyName: admin_password
   KeyLocation: 5
   ItemLocation: 5
 --- !u!1 &1656897143
@@ -2664,6 +4127,64 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1706107702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1706107703}
+  - component: {fileID: 1706107704}
+  m_Layer: 0
+  m_Name: ScriptCityRoom_lockthislater
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1706107703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706107702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1706107704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706107702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1858947632}
+  DownRoom: {fileID: 0}
+  RightRoom: {fileID: 1974478623}
+  LeftRoom: {fileID: 1019383329}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You arrive in Script City. This appears to be the heart of Data Kingdom.
+    Data, data personified as people, and flying strings of code bustle all around
+    you. The gameplay_mechanics for your game have to be around here somewhere. To
+    your right you see a large building, with a sign out front that says "Code Tavern."
+    To your left you see a shop called the "Input Hovel." Directly in front is the
+    Information Highway.
+  Download: 
+  RoomNPC: {fileID: 0}
 --- !u!1 &1706571481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,6 +4275,460 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706571481}
   m_CullTransparentMesh: 0
+--- !u!1 &1816258029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816258030}
+  - component: {fileID: 1816258031}
+  m_Layer: 0
+  m_Name: MorpheusNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816258030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816258029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816258031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816258029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: system_alpha
+  DialogueOptions:
+  - You're my ticket out of here, I'm guessing?
+  - So how bout that Frank guy, eh?
+  - I like that one movie you starred in, Borpheus.
+  DialogueResponses:
+  - I am. Welcome, my son, to the Matrices. All data passes through here. I am known
+    as Borpheus, though I am also sytem_alpha, represented as the computer lying
+    on this table here. I oversee all repositories within Data Kingdom. Simply enter
+    your neo_key into the computer, and you will be out of here.
+  - Frank was a man drunk on power; he took from people that which they treasured
+    most, all for his own gain. Though in the process, he lost himself. He was indeed
+    a fool.
+  - I have no idea what you are talking about.
+  ExecutableName: neo_key
+  OnExecuteDialogue: 'You insert the neo_key into the system_alpha. Matrix code clouds
+    your vision. You hear Borpheus''s voice speak to you. "Goodbye, my child. And
+    don''t let Gerald mess up the whole damn repository again." "Thank you, Borpheus,"
+    you tell him. "I can''t wait to see your next movie," you say. Everything goes
+    black. Suddenly you wake up in the real world, inside the offices of your game
+    studio. You look down and see a USB drive in your hand. You plug it into your
+    computer, and breathe a sigh of relief as you gaze upon your once-lost assets.
+    You''ve found them again. You shut down the computer, and begin to head home.
+    You look at the clock. It reads 2 A.M. "Damn," you think. "My wife ain''t gonna
+    be pleased, though hey, that''s just how it be sometimes." You walk off into
+    the sunset even though it''s 2 A.M. and really cool music starts playing and
+    yeah.
+
+
+    THANK YOU FOR PLAYING DATA KINGDOM!
+
+    THIS GAME WAS MADE IN 48
+    HOURS FOR GLOBAL GAME JAM 2021.
+
+
+    THIS GAME WAS MADE BY:
+
+    DAVIS CANBY
+
+    OLIVER
+    GALLINA
+
+    VINCENT LEVY'
+  ItemName: 
+  KeyName: 
+  KeyLocation: 5
+  ItemLocation: 5
+--- !u!1 &1853092043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853092044}
+  - component: {fileID: 1853092045}
+  m_Layer: 0
+  m_Name: JerryNPC3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1853092044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853092043}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1853092045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853092043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: jerry_the_chosen
+  DialogueOptions:
+  - Hey, uh, Jerry? What's, uh, poppin'?
+  DialogueResponses:
+  - (Jerry does not respond).
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 5
+  ItemLocation: 5
+--- !u!1 &1858947630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1858947631}
+  - component: {fileID: 1858947632}
+  m_Layer: 0
+  m_Name: InfoHighwayRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1858947631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858947630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 1.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858947632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858947630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1871357845}
+  DownRoom: {fileID: 1706107704}
+  RightRoom: {fileID: 227231354}
+  LeftRoom: {fileID: 1217627809}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You walk onto the Information Highway, and see the universe. Millions,
+    billions, and maybe even TRILLIONS of lines of code, data, and virtual stuff
+    zoom by you at nigh-impossible speeds. Also, a surprising amount of what appear
+    to be mice cords, for some reason, fly by you. If you stick your downloading
+    hand out, you might even be able to catch one. Through all the data you can perceive
+    a few areas around you. To the north appears to be... Jerry? To the east is some
+    kind of monstrous-looking cavern, and to the west is what appears to be some
+    sort of crowded festival.
+  Download: mousecord
+  RoomNPC: {fileID: 0}
+--- !u!1 &1871357843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1871357844}
+  - component: {fileID: 1871357845}
+  m_Layer: 0
+  m_Name: JerryRoom3
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1871357844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871357843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 3.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1871357845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871357843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 1539500071}
+  DownRoom: {fileID: 1858947632}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 0}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You head to the area north of the Information Highway, and find Jerry
+    once again. He's standing on a road leading up to what appears to be a large
+    castle, staring straight at the sun. "Should I, uhhh, talk to him?" you wonder.
+    "He seems a bit uhhh, preoccupied."
+  Download: 
+  RoomNPC: {fileID: 1853092045}
+--- !u!1 &1961210455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961210456}
+  - component: {fileID: 1961210457}
+  m_Layer: 0
+  m_Name: DirectorJerryNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1961210456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961210455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1961210457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961210455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: the_director
+  DialogueOptions:
+  - Jerry? What are you doing here?
+  - What's happening here?
+  - What's with the space vortex?
+  DialogueResponses:
+  - (Jerry chuckles sinisterly). Fool. Did you not recognize me this entire time?
+    My true identity is FRANK! (You gasp.) That's right. I'm the director of this
+    game, your beloved Director Frank. I sent you in here to die!
+  - FOOLISHNESS! You've fallen for my grand ruse, you blasted fool. I had you gather
+    up all our lost assets in Data Kingdom so that I could take them all for myself
+    and leave the studio, in order to sell the game on my own and reap all the profits
+    solitarily! AHAHAHAHAHAHAHAAAAAAAAAAAAAAAAAA!
+  - THIS, my friend, is FINAL DESTINATION! You will die here and now. (He chuckles
+    like that one evil guy from that one TV show). The only way to escape, my friend,
+    is to head north into the vortex, though I will warn you, you have very little
+    chance of making it out alive!
+  ExecutableName: 
+  OnExecuteDialogue: 
+  ItemName: 
+  KeyName: 
+  KeyLocation: 5
+  ItemLocation: 5
+--- !u!1 &1965960713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965960714}
+  - component: {fileID: 1965960715}
+  m_Layer: 0
+  m_Name: KingNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1965960714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965960713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1965960715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965960713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: code_king
+  DialogueOptions:
+  - What's gucci, code_king?
+  - I'm looking for my lost gameplay_mechanics, Mr. code_king man guy.
+  DialogueResponses:
+  - OHOHOHOHOHOOOOOOOOO MY GOOD BOY! WHAT ISN'T GUCCI THESE DAYS? I'M HAVING SUCH
+    A GREAT TIME RULING OVER MY CODE CASTLE! DATA KINGDOM SURE IS A BONKAHOG PLACE
+    TO LIVE! OHOHOHOHOHOHOOOOOOOOOOO!!!!111!!!!
+  - OHOHOHOHOHOHHHHOOOOOO MY BOY! YOUR gameplay_mechanics ARE RIGHT HERE! (He brandishes
+    the gameplay_mechanics). I'LL TELL YOU WHAT,THOUGH! I'VE BEEN LOOKING FOR A NEW
+    OPERATING SYSTEM AS OF LATE! SOMETHING TO, HOW DO YOU SAY, SPICE THINGS UP! YOU
+    EVER HEARD OF linux? I THINK THAT OS WOULD BE JUST THE THING TO  FOR A KINGLY
+    FELLOW LIKE MYSELF!
+  ExecutableName: linux
+  OnExecuteDialogue: You hand the famous operating system Linux over to the Code
+    King. "OHOHOHOHOHOHOOOOOO MY GOOD DUDE, MY BOY! THANK YOU FOREVERMORE! I WILL
+    CHERISH THIS LINUX TILL THE DAY THIS REPOSITORY IS DELETED, PERHAPS BY GERALD
+    OR SOME OTHER INCOMPETENT CO-WORKER OF YOURS, OHOHOHOHOHOOOO!!!11!!!11!!" The
+    Code King hands you your gameplay_mechanics. Finally, you've gathered all your
+    lost assets. It's time to get the heck up outta this Data Kingdom repository.
+  ItemName: 
+  KeyName: gameplay_mechanics
+  KeyLocation: 5
+  ItemLocation: 5
+--- !u!1 &1974478621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974478622}
+  - component: {fileID: 1974478623}
+  m_Layer: 0
+  m_Name: CodeTavernRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974478622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974478621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.88, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568483451}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1974478623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974478621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c46a422fd449418c07bb2027e8d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpRoom: {fileID: 0}
+  DownRoom: {fileID: 1118226649}
+  RightRoom: {fileID: 0}
+  LeftRoom: {fileID: 1706107704}
+  isLocked: 0
+  RequiredKeyName: 
+  LockedDialogue: 
+  OpeningText: You enter the Code Tavern. Code, of every language, lines the walls
+    and floors. I mean, this stuff is just everywhere. It's a wonder a guy can get
+    any sort of drink in here in the first place, with all this damn code lying around.
+    Like, wow, there's so much of it. Like straight up, there's only one other guy
+    in the tavern, because every other seat is taken up by mounds and mounds of code.
+    The dude sits at the bar, holding two mechanical gaming keyboards in his arms.
+    He seems like quite a character. Perhaps he can be of some assistance. There's
+    also a set of stairs towards the back of the tavern, which you could probably
+    go down in case anything interesting's down there.
+  Download: 
+  RoomNPC: {fileID: 1544791196}
 --- !u!1 &1974872641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,6 +4791,63 @@ MonoBehaviour:
   ExecutableName: 
   OnExecuteDialogue: 
   ItemName: 
+  KeyName: 
+  KeyLocation: 0
+  ItemLocation: 0
+--- !u!1 &2003263118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2003263119}
+  - component: {fileID: 2003263120}
+  m_Layer: 0
+  m_Name: ArcadeItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2003263119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003263118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 92366049}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2003263120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003263118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCname: arcade_machine
+  DialogueOptions: []
+  DialogueResponses: []
+  ExecutableName: full_cheat_code
+  OnExecuteDialogue: Using your handy dandy Notepad.exe as a reference, you input
+    the famous cheat code you used to use so long ago into the arcade_machine. Suddenly,
+    from a secret compartment in the machine, it prints out something. You pick it
+    up. Is this... Linux? You blink several times. Yep, you definitely just got a
+    copy of Linux printed out for you by the Gragius arcade machine. What a world
+    Data Kingdom is.
+  ItemName: linux
   KeyName: 
   KeyLocation: 0
   ItemLocation: 0
