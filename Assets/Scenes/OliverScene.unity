@@ -832,7 +832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpRoom: {fileID: 138975057}
   DownRoom: {fileID: 0}
-  RightRoom: {fileID: 0}
+  RightRoom: {fileID: 735663769}
   LeftRoom: {fileID: 1858947632}
   isLocked: 0
   RequiredKeyName: 
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8482712728ce42ade8aad6ddecac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCname: 
+  NPCname: cordless_mice
   DialogueOptions: []
   DialogueResponses: []
   ExecutableName: mousecord
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   InputText: {fileID: 397010730}
   Scrollbar: {fileID: 614673806}
   EventSystem: {fileID: 1587030861}
-  StartingRoom: {fileID: 634685619}
+  StartingRoom: {fileID: 1706107704}
   offset: -0.5
   HelpMessage: "Command List:\ngo [direction] \ngo to the next room in that direction\ndirection
     = up, down, left, right\n\ntalk \ntalk to the npc in the current room, pick a
@@ -1712,8 +1712,8 @@ MonoBehaviour:
     Frank explodes into a fountain of matrix code before your very eyes, and is vanquished.
     You have been given the neo_key. Suddenly, you see something north of you. Perhaps
     you can use that neo_key to get out of here.
-  ItemName: 
-  KeyName: neo_key
+  ItemName: neo_key
+  KeyName: 
   KeyLocation: 0
   ItemLocation: 0
 --- !u!1 &634685618
@@ -1762,7 +1762,7 @@ MonoBehaviour:
     you figure, lies all the game data your team lost after Gerald mucked up the
     whole repository with that disastrous merge conflict."
   Download: 
-  RoomNPC: {fileID: 1682265295}
+  RoomNPC: {fileID: 0}
 --- !u!4 &634685620
 Transform:
   m_ObjectHideFlags: 0
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpRoom: {fileID: 0}
-  DownRoom: {fileID: 1448829197}
+  DownRoom: {fileID: 0}
   RightRoom: {fileID: 0}
   LeftRoom: {fileID: 0}
   isLocked: 0
@@ -2357,12 +2357,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpRoom: {fileID: 1448829197}
-  DownRoom: {fileID: 1539500071}
+  DownRoom: {fileID: 0}
   RightRoom: {fileID: 0}
   LeftRoom: {fileID: 0}
-  isLocked: 0
-  RequiredKeyName: 
-  LockedDialogue: 
+  isLocked: 1
+  RequiredKeyName: gameplay_mechanics
+  LockedDialogue: Looks like you'll need to use your gameplay_mechanics in order
+    to head north of Code Castle.
   OpeningText: You walk north of the Code Castle, toward the back of Data Kingdom,
     where you figure the exit is. Suddenly darkness clouds your vision; you blink
     several times, and open your eyes to a new dimension. You stand on a platform
@@ -2420,7 +2421,7 @@ MonoBehaviour:
   OnExecuteDialogue: You whip out your Notepad.exe and write down the cheat code
     chunk written on the tablet. The second half of the code must be somewhere else
     in this cave, you figure.
-  ItemName: cheatcodefirsthalf
+  ItemName: cheatcode_1
   KeyName: 
   KeyLocation: 0
   ItemLocation: 0
@@ -2474,9 +2475,7 @@ MonoBehaviour:
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
-  OpeningText: You enter the passageway to the east of the entrance. Nothing's in
-    here, though it looks like there are two more passageways, one to the south and
-    one to the north.
+  OpeningText: Looks like this room is a dead end. Darn.
   Download: 
   RoomNPC: {fileID: 0}
 --- !u!1 &1110762468
@@ -2578,16 +2577,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpRoom: {fileID: 1974478623}
   DownRoom: {fileID: 0}
-  RightRoom: {fileID: 0}
+  RightRoom: {fileID: 1426520713}
   LeftRoom: {fileID: 0}
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
   OpeningText: You head down the stairs, into the Code Tavern basement. Squinting
-    in the dark, you see a bunch of cordless gaming mice scurrying around! Yuck.
-    What use is a mouse without a cord anyway? I mean, what's the deal with that?
-    *laugh track* Anyway there's also a door to your right labeled "Keyboard Closet,"
-    though it looks like it requires some sort of admin_password to enter.
+    in the dark, you see a bunch of cordless_mice scurrying around! Yuck. What use
+    is a mouse without a cord anyway? I mean, what's the deal with that? *laugh track*
+    Anyway there's also a door to your right labeled "Keyboard Closet," though it
+    looks like it requires some sort of admin_password to enter.
   Download: 
   RoomNPC: {fileID: 239674238}
 --- !u!1 &1217627807
@@ -2808,9 +2807,8 @@ MonoBehaviour:
   isLocked: 0
   RequiredKeyName: 
   LockedDialogue: 
-  OpeningText: You enter the northern passageway to the east of the entrance. Nothing's
-    in here, though it looks like there are two more passageways, one to the east
-    and one to the north.
+  OpeningText: You enter the northern passageway. Nothing's in here, though it looks
+    like there are two more passageways, one to the east and one to the north.
   Download: 
   RoomNPC: {fileID: 0}
 --- !u!4 &1335476597
@@ -3102,11 +3100,10 @@ MonoBehaviour:
   RequiredKeyName: admin_password
   LockedDialogue: You'll need some kind of admin_password to get into this room,
     it seems.
-  OpeningText: You head down the stairs, into the Code Tavern basement. Squinting
-    in the dark, you see a bunch of cordless gaming mice scurrying around! Yuck.
-    What use is a mouse without a cord anyway? I mean, what's the deal with that?
-    *laugh track* Anyway there's also a door to your right labeled "Keyboard Closet,"
-    though it looks like it requires some sort of admin_password to enter.
+  OpeningText: You walk into the Keyboard Closet. Keyboards of all kinds litter the
+    walls and floor. You see a shiny new RGB Platinum Mechanical Gaming Keyboard
+    smack dab in the center of the room. That guy with the keyboards up at the bar
+    should be interested in this.
   Download: keyboard
   RoomNPC: {fileID: 0}
 --- !u!1 &1429938723
@@ -3208,7 +3205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpRoom: {fileID: 889479993}
-  DownRoom: {fileID: 1063980030}
+  DownRoom: {fileID: 0}
   RightRoom: {fileID: 0}
   LeftRoom: {fileID: 0}
   isLocked: 0
@@ -3694,8 +3691,8 @@ MonoBehaviour:
     any important stuff down.
   ItemName: notepad.exe
   KeyName: 
-  KeyLocation: 0
-  ItemLocation: 0
+  KeyLocation: 5
+  ItemLocation: 5
 --- !u!1 &1568483450
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,11 +4175,10 @@ MonoBehaviour:
   RequiredKeyName: 
   LockedDialogue: 
   OpeningText: You arrive in Script City. This appears to be the heart of Data Kingdom.
-    Data, data personified as people, and flying strings of code bustle all around
-    you. The gameplay_mechanics for your game have to be around here somewhere. To
-    your right you see a large building, with a sign out front that says "Code Tavern."
-    To your left you see a shop called the "Input Hovel." Directly in front is the
-    Information Highway.
+    Gigabytes of data and strings of code bustle all around you. The gameplay_mechanics
+    for your game have to be around here somewhere. To your right you see a large
+    building, with a sign out front that says "Code Tavern." To your left you see
+    a shop called the "Input Hovel." Directly in front is the Information Highway.
   Download: 
   RoomNPC: {fileID: 0}
 --- !u!1 &1706571481
@@ -4655,8 +4651,8 @@ MonoBehaviour:
   - OHOHOHOHOHOHHHHOOOOOO MY BOY! YOUR gameplay_mechanics ARE RIGHT HERE! (He brandishes
     the gameplay_mechanics). I'LL TELL YOU WHAT,THOUGH! I'VE BEEN LOOKING FOR A NEW
     OPERATING SYSTEM AS OF LATE! SOMETHING TO, HOW DO YOU SAY, SPICE THINGS UP! YOU
-    EVER HEARD OF linux? I THINK THAT OS WOULD BE JUST THE THING TO  FOR A KINGLY
-    FELLOW LIKE MYSELF!
+    EVER HEARD OF linux? I THINK THAT OS WOULD BE JUST THE THING FOR A KINGLY FELLOW
+    LIKE MYSELF!
   ExecutableName: linux
   OnExecuteDialogue: You hand the famous operating system Linux over to the Code
     King. "OHOHOHOHOHOHOOOOOO MY GOOD DUDE, MY BOY! THANK YOU FOREVERMORE! I WILL
@@ -4664,6 +4660,8 @@ MonoBehaviour:
     OR SOME OTHER INCOMPETENT CO-WORKER OF YOURS, OHOHOHOHOHOOOO!!!11!!!11!!" The
     Code King hands you your gameplay_mechanics. Finally, you've gathered all your
     lost assets. It's time to get the heck up outta this Data Kingdom repository.
+    It looks like there's an exit to the north of this place. Something like 'execute
+    gameplay_mechanics up' should work.
   ItemName: 
   KeyName: gameplay_mechanics
   KeyLocation: 5
